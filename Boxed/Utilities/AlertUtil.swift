@@ -6,4 +6,16 @@
 //  Copyright © 2020 Ankith. All rights reserved.
 //
 
-import Foundation
+import Cocoa
+
+class AlertUtil {
+    
+    static func oneButtonAlert(question: String, text: String, confirmText: String = "OK") {
+        let alert = NSAlert()
+        alert.messageText = question
+        alert.alertStyle = .warning
+        alert.informativeText = text
+        alert.addButton(withTitle: confirmText)
+        alert.runModal()
+    }
+}

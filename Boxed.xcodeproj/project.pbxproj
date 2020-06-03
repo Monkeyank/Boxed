@@ -3,23 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79324882B31000D40F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79224882B31000D40F4 /* ContentView.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79824882B32000D40F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79724882B32000D40F4 /* Preview Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
 		B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29562992487374C006BE8FA /* AppDelegate.swift */; };
-		B295629C2487374C006BE8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295629B2487374C006BE8FA /* ContentView.swift */; };
 		B295629E2487374F006BE8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B295629D2487374F006BE8FA /* Assets.xcassets */; };
-		B29562A12487374F006BE8FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29562A02487374F006BE8FA /* Preview Assets.xcassets */; };
 		B29562A42487374F006BE8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29562A22487374F006BE8FA /* Main.storyboard */; };
+		B2980ABF248860F2005C0E60 /* LogViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2980ABE248860F2005C0E60 /* LogViewer.storyboard */; };
+		B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2980AC0248860FC005C0E60 /* LogViewer.swift */; };
+		B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2980AC224886670005C0E60 /* PrefsViewController.swift */; };
+		B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2980AC42488668D005C0E60 /* SettingsViewController.swift */; };
+		B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2980AC6248867E4005C0E60 /* CUtil.swift */; };
+		B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2980AC82488689B005C0E60 /* AlertUtil.swift */; };
+		B2980ACC2488699D005C0E60 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2980ACB2488699D005C0E60 /* WelcomeViewController.swift */; };
+		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.release.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.release.xcconfig"; sourceTree = "<group>"; };
+		7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxedLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B282C79224882B31000D40F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,12 +40,20 @@
 		B282C79D24882B32000D40F4 /* BoxedLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoxedLauncher.entitlements; sourceTree = "<group>"; };
 		B29562962487374B006BE8FA /* Boxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29562992487374C006BE8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B295629B2487374C006BE8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B295629D2487374F006BE8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B29562A02487374F006BE8FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B29562A32487374F006BE8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B29562A52487374F006BE8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29562A62487374F006BE8FA /* Boxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Boxed.entitlements; sourceTree = "<group>"; };
+		B2980ABE248860F2005C0E60 /* LogViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogViewer.storyboard; sourceTree = "<group>"; };
+		B2980AC0248860FC005C0E60 /* LogViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewer.swift; sourceTree = "<group>"; };
+		B2980AC224886670005C0E60 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
+		B2980AC42488668D005C0E60 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B2980AC6248867E4005C0E60 /* CUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUtil.swift; sourceTree = "<group>"; };
+		B2980AC82488689B005C0E60 /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		B2980ACB2488699D005C0E60 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.debug.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.debug.xcconfig"; sourceTree = "<group>"; };
+		DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.release.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +69,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18119497101F47AD1103EED4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */,
+				EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */,
+				C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */,
+				44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B282C78F24882B31000D40F4 /* BoxedLauncher */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +115,8 @@
 				B29562982487374C006BE8FA /* Boxed */,
 				B282C78F24882B31000D40F4 /* BoxedLauncher */,
 				B29562972487374B006BE8FA /* Products */,
+				18119497101F47AD1103EED4 /* Pods */,
+				D43AF8538B1A49EA6C24DEF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,23 +132,61 @@
 		B29562982487374C006BE8FA /* Boxed */ = {
 			isa = PBXGroup;
 			children = (
+				B2980ACA24886988005C0E60 /* WelcomeWindow */,
+				B2980ABD2488604B005C0E60 /* PrefsWindow */,
+				B2980ABB24886035005C0E60 /* Logging */,
+				B2980ABC2488603F005C0E60 /* Utilities */,
 				B29562992487374C006BE8FA /* AppDelegate.swift */,
-				B295629B2487374C006BE8FA /* ContentView.swift */,
 				B295629D2487374F006BE8FA /* Assets.xcassets */,
 				B29562A22487374F006BE8FA /* Main.storyboard */,
 				B29562A52487374F006BE8FA /* Info.plist */,
 				B29562A62487374F006BE8FA /* Boxed.entitlements */,
-				B295629F2487374F006BE8FA /* Preview Content */,
 			);
 			path = Boxed;
 			sourceTree = "<group>";
 		};
-		B295629F2487374F006BE8FA /* Preview Content */ = {
+		B2980ABB24886035005C0E60 /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				B29562A02487374F006BE8FA /* Preview Assets.xcassets */,
+				B2980ABE248860F2005C0E60 /* LogViewer.storyboard */,
+				B2980AC0248860FC005C0E60 /* LogViewer.swift */,
 			);
-			path = "Preview Content";
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		B2980ABC2488603F005C0E60 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B2980AC6248867E4005C0E60 /* CUtil.swift */,
+				B2980AC82488689B005C0E60 /* AlertUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B2980ABD2488604B005C0E60 /* PrefsWindow */ = {
+			isa = PBXGroup;
+			children = (
+				B2980AC224886670005C0E60 /* PrefsViewController.swift */,
+				B2980AC42488668D005C0E60 /* SettingsViewController.swift */,
+			);
+			path = PrefsWindow;
+			sourceTree = "<group>";
+		};
+		B2980ACA24886988005C0E60 /* WelcomeWindow */ = {
+			isa = PBXGroup;
+			children = (
+				B2980ACB2488699D005C0E60 /* WelcomeViewController.swift */,
+			);
+			path = WelcomeWindow;
+			sourceTree = "<group>";
+		};
+		D43AF8538B1A49EA6C24DEF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */,
+				7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B282C7A024882B32000D40F4 /* Build configuration list for PBXNativeTarget "BoxedLauncher" */;
 			buildPhases = (
+				6471C7C26D6789B5529E5351 /* [CP] Check Pods Manifest.lock */,
 				B282C78A24882B31000D40F4 /* Sources */,
 				B282C78B24882B31000D40F4 /* Frameworks */,
 				B282C78C24882B31000D40F4 /* Resources */,
@@ -142,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29562A92487374F006BE8FA /* Build configuration list for PBXNativeTarget "Boxed" */;
 			buildPhases = (
+				634517B76D1D7763BBD20AA4 /* [CP] Check Pods Manifest.lock */,
 				B29562922487374B006BE8FA /* Sources */,
 				B29562932487374B006BE8FA /* Frameworks */,
 				B29562942487374B006BE8FA /* Resources */,
+				DE8449D8D102E924F7165487 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,12 +282,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29562A42487374F006BE8FA /* Main.storyboard in Resources */,
-				B29562A12487374F006BE8FA /* Preview Assets.xcassets in Resources */,
+				B2980ABF248860F2005C0E60 /* LogViewer.storyboard in Resources */,
 				B295629E2487374F006BE8FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		634517B76D1D7763BBD20AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boxed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6471C7C26D6789B5529E5351 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxedLauncher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8449D8D102E924F7165487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boxed/Pods-Boxed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boxed/Pods-Boxed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Boxed/Pods-Boxed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B282C78A24882B31000D40F4 /* Sources */ = {
@@ -229,8 +367,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B295629C2487374C006BE8FA /* ContentView.swift in Sources */,
+				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
+				B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
+				B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */,
+				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
+				B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */,
+				B2980ACC2488699D005C0E60 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +401,7 @@
 /* Begin XCBuildConfiguration section */
 		B282C79E24882B32000D40F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BoxedLauncher/BoxedLauncher.entitlements;
@@ -281,6 +425,7 @@
 		};
 		B282C79F24882B32000D40F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BoxedLauncher/BoxedLauncher.entitlements;
@@ -417,6 +562,7 @@
 		};
 		B29562AA2487374F006BE8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Boxed/Boxed.entitlements;
@@ -440,6 +586,7 @@
 		};
 		B29562AB2487374F006BE8FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Boxed/Boxed.entitlements;
