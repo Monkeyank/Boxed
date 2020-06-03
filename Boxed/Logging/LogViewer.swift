@@ -8,6 +8,9 @@
 
 import Cocoa
 
+// Logs tasks in the background and if window snapper can work
+// Logs timestamps with events
+
 class Logger {
     
     static var logging = false

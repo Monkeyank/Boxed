@@ -18,10 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 extension AppDelegate: NSMenuDelegate {
     
-    
 }
 
 extension AppDelegate: NSWindowDelegate {
-    
     
 }

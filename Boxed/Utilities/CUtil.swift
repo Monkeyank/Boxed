@@ -10,7 +10,7 @@ import Foundation
 
 class CUtil {
     
-    // both funcs bridges object into a pointer to pass into a C function
+    // Both funcs bridge objects into a pointer in order to pass into a C function
     
     static func bridge<T : AnyObject>(obj : T) -> UnsafeMutableRawPointer {
         return UnsafeMutableRawPointer(Unmanaged.passUnretained(obj).toOpaque())

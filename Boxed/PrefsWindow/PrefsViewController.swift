@@ -13,6 +13,8 @@ import ServiceManagement
 class PrefsViewController: NSViewController {
     
     var actionsToViews = [WindowAction: MASShortcutView]()
+
+    // Shortcut buttons/list
     
     @IBOutlet weak var leftHalfShortcutView: MASShortcutView!
     @IBOutlet weak var rightHalfShortcutView: MASShortcutView!
@@ -35,7 +37,8 @@ class PrefsViewController: NSViewController {
     @IBOutlet weak var centerShortcutView: MASShortcutView!
     @IBOutlet weak var restoreShortcutView: MASShortcutView!
     
-    // Additional
+    // Additional Shortcut Stuff
+    
     @IBOutlet weak var firstThirdShortcutView: MASShortcutView!
     @IBOutlet weak var firstTwoThirdsShortcutView: MASShortcutView!
     @IBOutlet weak var centerThirdShortcutView: MASShortcutView!
@@ -49,7 +52,8 @@ class PrefsViewController: NSViewController {
     
     @IBOutlet weak var almostMaximizeShortcutView: MASShortcutView!
     
-    // Settings
+    // Settings Views/Replaceable things
+    
     override func awakeFromNib() {
         
         actionsToViews = [
@@ -103,6 +107,8 @@ class PrefsViewController: NSViewController {
         actionsToViews.values.forEach { $0.shortcutValidator = validator }
     }
 }
+
+// Validates Shortcut and Allows them to be Called
 
 class PassthroughShortcutValidator: MASShortcutValidator {
     

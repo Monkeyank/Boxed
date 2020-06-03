@@ -10,6 +10,8 @@ import Cocoa
 
 class AlertUtil {
     
+    // Alert Extension/Util to be used around the codebase
+    
     static func oneButtonAlert(question: String, text: String, confirmText: String = "OK") {
         let alert = NSAlert()
         alert.messageText = question

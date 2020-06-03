@@ -12,8 +12,12 @@ import Sparkle
 
 class SettingsViewController: NSViewController {
     
+    // Notifications
+    
     static let allowAnyShortcutNotificationName = Notification.Name("allowAnyShortcutToggle")
     static let windowSnappingNotificationName = Notification.Name("windowSnappingToggle")
+    
+    // Options as Button for launch on login, window Snapping, etc
     
     @IBOutlet weak var launchOnLoginCheckbox: NSButton!
     @IBOutlet weak var versionLabel: NSTextField!
