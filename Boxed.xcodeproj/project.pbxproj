@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
+		B282C79324882B31000D40F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79224882B31000D40F4 /* ContentView.swift */; };
+		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
+		B282C79824882B32000D40F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79724882B32000D40F4 /* Preview Assets.xcassets */; };
+		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
 		B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29562992487374C006BE8FA /* AppDelegate.swift */; };
 		B295629C2487374C006BE8FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295629B2487374C006BE8FA /* ContentView.swift */; };
 		B295629E2487374F006BE8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B295629D2487374F006BE8FA /* Assets.xcassets */; };
@@ -15,6 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B282C79224882B31000D40F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B282C79724882B32000D40F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B282C79A24882B32000D40F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B282C79C24882B32000D40F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B282C79D24882B32000D40F4 /* BoxedLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoxedLauncher.entitlements; sourceTree = "<group>"; };
 		B29562962487374B006BE8FA /* Boxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29562992487374C006BE8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B295629B2487374C006BE8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B282C78B24882B31000D40F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B29562932487374B006BE8FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +56,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B282C78F24882B31000D40F4 /* BoxedLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				B282C79024882B31000D40F4 /* AppDelegate.swift */,
+				B282C79224882B31000D40F4 /* ContentView.swift */,
+				B282C79424882B32000D40F4 /* Assets.xcassets */,
+				B282C79924882B32000D40F4 /* Main.storyboard */,
+				B282C79C24882B32000D40F4 /* Info.plist */,
+				B282C79D24882B32000D40F4 /* BoxedLauncher.entitlements */,
+				B282C79624882B32000D40F4 /* Preview Content */,
+			);
+			path = BoxedLauncher;
+			sourceTree = "<group>";
+		};
+		B282C79624882B32000D40F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B282C79724882B32000D40F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		B295628D2487374B006BE8FA = {
 			isa = PBXGroup;
 			children = (
 				B29562982487374C006BE8FA /* Boxed */,
+				B282C78F24882B31000D40F4 /* BoxedLauncher */,
 				B29562972487374B006BE8FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B29562962487374B006BE8FA /* Boxed.app */,
+				B282C78E24882B31000D40F4 /* BoxedLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +121,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B282C78D24882B31000D40F4 /* BoxedLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B282C7A024882B32000D40F4 /* Build configuration list for PBXNativeTarget "BoxedLauncher" */;
+			buildPhases = (
+				B282C78A24882B31000D40F4 /* Sources */,
+				B282C78B24882B31000D40F4 /* Frameworks */,
+				B282C78C24882B31000D40F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxedLauncher;
+			productName = BoxedLauncher;
+			productReference = B282C78E24882B31000D40F4 /* BoxedLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B29562952487374B006BE8FA /* Boxed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29562A92487374F006BE8FA /* Build configuration list for PBXNativeTarget "Boxed" */;
@@ -104,6 +165,9 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Ankith;
 				TargetAttributes = {
+					B282C78D24882B31000D40F4 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					B29562952487374B006BE8FA = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -123,11 +187,22 @@
 			projectRoot = "";
 			targets = (
 				B29562952487374B006BE8FA /* Boxed */,
+				B282C78D24882B31000D40F4 /* BoxedLauncher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B282C78C24882B31000D40F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B282C79B24882B32000D40F4 /* Main.storyboard in Resources */,
+				B282C79824882B32000D40F4 /* Preview Assets.xcassets in Resources */,
+				B282C79524882B32000D40F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B29562942487374B006BE8FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +216,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B282C78A24882B31000D40F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B282C79324882B31000D40F4 /* ContentView.swift in Sources */,
+				B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B29562922487374B006BE8FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +237,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B282C79924882B32000D40F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B282C79A24882B32000D40F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		B29562A22487374F006BE8FA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -164,6 +256,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B282C79E24882B32000D40F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BoxedLauncher/BoxedLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BoxedLauncher/Preview Content\"";
+				DEVELOPMENT_TEAM = 63QM8F2SFJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoxedLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monkeyank.BoxedLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B282C79F24882B32000D40F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BoxedLauncher/BoxedLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BoxedLauncher/Preview Content\"";
+				DEVELOPMENT_TEAM = 63QM8F2SFJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoxedLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.monkeyank.BoxedLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B29562A72487374F006BE8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +464,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B282C7A024882B32000D40F4 /* Build configuration list for PBXNativeTarget "BoxedLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B282C79E24882B32000D40F4 /* Debug */,
+				B282C79F24882B32000D40F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B29562912487374B006BE8FA /* Build configuration list for PBXProject "Boxed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
