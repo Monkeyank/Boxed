@@ -10,6 +10,8 @@
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
 		B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454312489AC2000B68505 /* ShortcutManager.swift */; };
 		B26454342489AE2D00B68505 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454332489AE2D00B68505 /* WindowManager.swift */; };
+		B26454372489B0B500B68505 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26454362489B0B500B68505 /* MessageView.xib */; };
+		B26454392489B0DA00B68505 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454382489B0DA00B68505 /* MessageView.swift */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
 		B26454312489AC2000B68505 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		B26454332489AE2D00B68505 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		B26454362489B0B500B68505 /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		B26454382489B0DA00B68505 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B26454352489B09500B68505 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				B26454362489B0B500B68505 /* MessageView.xib */,
+				B26454382489B0DA00B68505 /* MessageView.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
 		B282C78F24882B31000D40F4 /* BoxedLauncher */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		B29562982487374C006BE8FA /* Boxed */ = {
 			isa = PBXGroup;
 			children = (
+				B26454352489B09500B68505 /* Popover */,
 				B2980ACA24886988005C0E60 /* WelcomeWindow */,
 				B2980ABD2488604B005C0E60 /* PrefsWindow */,
 				B2980ABB24886035005C0E60 /* Logging */,
@@ -272,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26454372489B0B500B68505 /* MessageView.xib in Resources */,
 				B29562A42487374F006BE8FA /* Main.storyboard in Resources */,
 				B2980ABF248860F2005C0E60 /* LogViewer.storyboard in Resources */,
 				B295629E2487374F006BE8FA /* Assets.xcassets in Resources */,
@@ -361,6 +376,7 @@
 				B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
 				B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */,
+				B26454392489B0DA00B68505 /* MessageView.swift in Sources */,
 				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
 				B26454342489AE2D00B68505 /* WindowManager.swift in Sources */,
 				B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */,
