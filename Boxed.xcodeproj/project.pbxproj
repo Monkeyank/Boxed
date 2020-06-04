@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
-		B282C79324882B31000D40F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79224882B31000D40F4 /* ContentView.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
-		B282C79824882B32000D40F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79724882B32000D40F4 /* Preview Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
 		B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29562992487374C006BE8FA /* AppDelegate.swift */; };
 		B295629E2487374F006BE8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B295629D2487374F006BE8FA /* Assets.xcassets */; };
@@ -32,9 +30,7 @@
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B282C79224882B31000D40F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B282C79724882B32000D40F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B282C79A24882B32000D40F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B282C79C24882B32000D40F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B282C79D24882B32000D40F4 /* BoxedLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoxedLauncher.entitlements; sourceTree = "<group>"; };
@@ -91,22 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				B282C79024882B31000D40F4 /* AppDelegate.swift */,
-				B282C79224882B31000D40F4 /* ContentView.swift */,
 				B282C79424882B32000D40F4 /* Assets.xcassets */,
 				B282C79924882B32000D40F4 /* Main.storyboard */,
 				B282C79C24882B32000D40F4 /* Info.plist */,
 				B282C79D24882B32000D40F4 /* BoxedLauncher.entitlements */,
-				B282C79624882B32000D40F4 /* Preview Content */,
 			);
 			path = BoxedLauncher;
-			sourceTree = "<group>";
-		};
-		B282C79624882B32000D40F4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B282C79724882B32000D40F4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B295628D2487374B006BE8FA = {
@@ -272,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B282C79B24882B32000D40F4 /* Main.storyboard in Resources */,
-				B282C79824882B32000D40F4 /* Preview Assets.xcassets in Resources */,
 				B282C79524882B32000D40F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B282C79324882B31000D40F4 /* ContentView.swift in Sources */,
 				B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
