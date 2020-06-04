@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
+		B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454312489AC2000B68505 /* ShortcutManager.swift */; };
+		B26454342489AE2D00B68505 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454332489AE2D00B68505 /* WindowManager.swift */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.release.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.release.xcconfig"; sourceTree = "<group>"; };
 		7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxedLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
+		B26454312489AC2000B68505 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
+		B26454332489AE2D00B68505 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				B29562A22487374F006BE8FA /* Main.storyboard */,
 				B29562A52487374F006BE8FA /* Info.plist */,
 				B29562A62487374F006BE8FA /* Boxed.entitlements */,
+				B26454312489AC2000B68505 /* ShortcutManager.swift */,
+				B26454332489AE2D00B68505 /* WindowManager.swift */,
 			);
 			path = Boxed;
 			sourceTree = "<group>";
@@ -356,8 +362,10 @@
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
 				B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */,
 				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
+				B26454342489AE2D00B68505 /* WindowManager.swift in Sources */,
 				B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */,
 				B2980ACC2488699D005C0E60 /* WelcomeViewController.swift in Sources */,
+				B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
