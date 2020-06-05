@@ -13,6 +13,7 @@
 		B26454372489B0B500B68505 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26454362489B0B500B68505 /* MessageView.xib */; };
 		B26454392489B0DA00B68505 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454382489B0DA00B68505 /* MessageView.swift */; };
 		B264543B2489B2C300B68505 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264543A2489B2C300B68505 /* Defaults.swift */; };
+		B264543D2489CB7A00B68505 /* SubsequentExecutionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264543C2489CB7A00B68505 /* SubsequentExecutionMode.swift */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		B26454362489B0B500B68505 /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		B26454382489B0DA00B68505 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		B264543A2489B2C300B68505 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		B264543C2489CB7A00B68505 /* SubsequentExecutionMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsequentExecutionMode.swift; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				B29562A62487374F006BE8FA /* Boxed.entitlements */,
 				B26454312489AC2000B68505 /* ShortcutManager.swift */,
 				B26454332489AE2D00B68505 /* WindowManager.swift */,
+				B264543C2489CB7A00B68505 /* SubsequentExecutionMode.swift */,
 			);
 			path = Boxed;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
 				B26454342489AE2D00B68505 /* WindowManager.swift in Sources */,
 				B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */,
+				B264543D2489CB7A00B68505 /* SubsequentExecutionMode.swift in Sources */,
 				B2980ACC2488699D005C0E60 /* WelcomeViewController.swift in Sources */,
 				B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */,
 				B264543B2489B2C300B68505 /* Defaults.swift in Sources */,
