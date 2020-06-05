@@ -12,8 +12,15 @@ class MessagePopover {
     
     var popover: NSPopover
     
+    // From func MessageView (underneath)
+    var messageView: MessageView
+    
     init() {
         popover = NSPopover()
+        messageView = MessageView()
+        popover.behavior = .transient
+        popover.contentViewController = messageView
+        
     }
 }
 

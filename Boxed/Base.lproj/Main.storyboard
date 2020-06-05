@@ -775,8 +775,8 @@
         <!--Prefs View Controller-->
         <scene sceneID="lPF-P7-xMV">
             <objects>
-                <viewController id="j1B-U1-fmM" userLabel="Prefs View Controller" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="biv-yS-5Vm">
+                <viewController id="j1B-U1-fmM" userLabel="Prefs View Controller" customClass="PrefsViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="biv-yS-5Vm">
                         <rect key="frame" x="0.0" y="0.0" width="697" height="395"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -2269,7 +2269,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="68C-DM-Oc4"/>
                                         </constraints>
                                         <textFieldCell key="cell" title="When the menu bar icon is hidden, relaunch Boxed from Finder to open." id="rpe-Sl-5wN">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="label" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2290,7 +2290,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="rEL-Tx-amT"/>
                                         </constraints>
                                         <textFieldCell key="cell" title="If you repeat move or half actions, the window will move to the next display instead of 1/2, 2/3, and 1/3 size." id="O6l-cD-G4A">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="label" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2501,7 +2501,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-95-hZh">
                                         <rect key="frame" x="-2" y="50" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Spectacle shortcuts are more likely to conflict with other shortcuts" id="wzX-Ev-GCB">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="label" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2509,7 +2509,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fFs-To-sai">
                                         <rect key="frame" x="-2" y="0.0" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Choosing Spectacle will also cycle 1/2, 2/3, and 1/3 window widths on repeated shortcuts" id="ksD-Ve-dzy">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="label" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2585,7 +2585,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-la-Yb5">
                                         <rect key="frame" x="-2" y="137" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Go to System Preferences → Security &amp; Privacy → Privacy → Accessibility" id="3We-DQ-daT">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="label" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
