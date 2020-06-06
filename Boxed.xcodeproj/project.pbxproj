@@ -15,6 +15,8 @@
 		B264543B2489B2C300B68505 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264543A2489B2C300B68505 /* Defaults.swift */; };
 		B264543D2489CB7A00B68505 /* SubsequentExecutionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264543C2489CB7A00B68505 /* SubsequentExecutionMode.swift */; };
 		B26CAC4C248C4EB900A8CCDC /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */; };
+		B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC4F248C527200A8CCDC /* EventMonitor.swift */; };
+		B26CAC52248C528000A8CCDC /* SnappingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC51248C528000A8CCDC /* SnappingManager.swift */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		B264543A2489B2C300B68505 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		B264543C2489CB7A00B68505 /* SubsequentExecutionMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsequentExecutionMode.swift; sourceTree = "<group>"; };
 		B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
+		B26CAC4F248C527200A8CCDC /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		B26CAC51248C528000A8CCDC /* SnappingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingManager.swift; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +120,15 @@
 			path = Popover;
 			sourceTree = "<group>";
 		};
+		B26CAC4E248C525B00A8CCDC /* Snapping */ = {
+			isa = PBXGroup;
+			children = (
+				B26CAC4F248C527200A8CCDC /* EventMonitor.swift */,
+				B26CAC51248C528000A8CCDC /* SnappingManager.swift */,
+			);
+			path = Snapping;
+			sourceTree = "<group>";
+		};
 		B282C78F24882B31000D40F4 /* BoxedLauncher */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		B29562982487374C006BE8FA /* Boxed */ = {
 			isa = PBXGroup;
 			children = (
+				B26CAC4E248C525B00A8CCDC /* Snapping */,
 				B2C2BEF7248B8B4200340919 /* Accessibility */,
 				B2C2BEF4248B86B900340919 /* WindowCalculations */,
 				B26454352489B09500B68505 /* Popover */,
@@ -413,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
+				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B2C2BEF3248B856800340919 /* BoxedStatusItem.swift in Sources */,
 				B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
@@ -430,6 +445,7 @@
 				B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */,
 				B264543B2489B2C300B68505 /* Defaults.swift in Sources */,
 				B2C2BEFB248B8B7700340919 /* AcessibilityWindowController.swift in Sources */,
+				B26CAC52248C528000A8CCDC /* SnappingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
