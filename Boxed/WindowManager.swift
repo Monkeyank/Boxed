@@ -11,3 +11,21 @@ import Cocoa
 class WindowManager {
     
 }
+
+struct BoxedAction {
+    let action: WindowAction
+    let rect: CGRect
+    let count: Int
+}
+
+struct ExecutionParameters {
+    let action: WindowAction
+    let updateRestoreRect: Bool
+    let screen: NSScreen?
+    
+    init(_ action: WindowAction, updateRestoreRect: Bool = true, screen: NSScreen? = nil) {
+        self.action = action
+        self.updateRestoreRect = updateRestoreRect
+        self.screen = screen
+    }
+}

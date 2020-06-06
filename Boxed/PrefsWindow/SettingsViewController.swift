@@ -47,7 +47,7 @@ class SettingsViewController: NSViewController {
     @IBAction func toggleHideMenuBarIcon(_ sender: NSButton) {
         let newSetting: Bool = sender.state == .on
         Defaults.hideMenuBarIcon.enabled = newSetting
-        BoxeStatusItem.instance.refreshVisibility()
+        BoxedStatusItem.instance.refreshVisibility()
     }
     
     @IBAction func toggleSubsequentExecutionBehavior(_ sender: NSButton) {
