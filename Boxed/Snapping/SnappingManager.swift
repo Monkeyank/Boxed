@@ -6,4 +6,12 @@
 //  Copyright © 2020 Ankith. All rights reserved.
 //
 
-import Foundation
+import Cocoa
+
+class SnappingManager {
+    
+    var eventMonitor: EventMonitor?
+    var frontmostWindow: AccessibilityElement?
+    var frontmostWindowId: Int?
+    var windowMoving: Bool? = false;
+}

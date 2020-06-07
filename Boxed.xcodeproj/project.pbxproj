@@ -17,6 +17,7 @@
 		B26CAC4C248C4EB900A8CCDC /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */; };
 		B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC4F248C527200A8CCDC /* EventMonitor.swift */; };
 		B26CAC52248C528000A8CCDC /* SnappingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC51248C528000A8CCDC /* SnappingManager.swift */; };
+		B26CAC54248C74BE00A8CCDC /* ScreenDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CAC53248C74BE00A8CCDC /* ScreenDetection.swift */; };
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		B26CAC4F248C527200A8CCDC /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		B26CAC51248C528000A8CCDC /* SnappingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingManager.swift; sourceTree = "<group>"; };
+		B26CAC53248C74BE00A8CCDC /* ScreenDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDetection.swift; sourceTree = "<group>"; };
 		B282C78E24882B31000D40F4 /* BoxedLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxedLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B282C79024882B31000D40F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B282C79424882B32000D40F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */,
 				B26454332489AE2D00B68505 /* WindowManager.swift */,
 				B2C2BEF0248B831D00340919 /* WindowAction.swift */,
+				B26CAC53248C74BE00A8CCDC /* ScreenDetection.swift */,
 				B264543C2489CB7A00B68505 /* SubsequentExecutionMode.swift */,
 			);
 			path = Boxed;
@@ -437,6 +440,7 @@
 				B26454342489AE2D00B68505 /* WindowManager.swift in Sources */,
 				B2C2BEF9248B8B6100340919 /* AccessibilityAuthorization.swift in Sources */,
 				B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */,
+				B26CAC54248C74BE00A8CCDC /* ScreenDetection.swift in Sources */,
 				B264543D2489CB7A00B68505 /* SubsequentExecutionMode.swift in Sources */,
 				B2980ACC2488699D005C0E60 /* WelcomeViewController.swift in Sources */,
 				B2C2BEF6248B87B500340919 /* GapCalculation.swift in Sources */,
