@@ -19,5 +19,17 @@ class CenteringFixedSizeWindowMover: WindowMover {
         }
         
         var adjustedWindowRect: CGRect = currentWindowRect
+        
+        if currentWindowRect.size.width != windowRect.width {
+            adjustedWindowRect.origin.x = round((windowRect.width - currentWindowRect.width) / 2.0) + windowRect.minX
+        }
+        
+        if currentWindowRect.size.height != windowRect.height {
+            adjustedWindowRect.origin.y = round((windowRect.height - currentWindowRect.height) / 2.0) + windowRect.minY
+        }
+        
+        if !adjustedWindowRect.equalTo(currentWindowRect) {
+            frontmostWindowElement?.setRectOf(adjustedWindowRect)
+        }
     }
 }

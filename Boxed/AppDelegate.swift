@@ -13,7 +13,8 @@ import os.log
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
+    static let launcherAppId = "com.monkeyank.BoxedLauncher"
 }
 
 extension AppDelegate: NSMenuDelegate {
