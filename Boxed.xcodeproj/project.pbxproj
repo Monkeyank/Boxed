@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
 		B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C53248DEEB7004D5438 /* WindowHistory.swift */; };
+		B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C56248E01D3004D5438 /* WindowMover.swift */; };
+		B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C58248E0241004D5438 /* BestWindowMover.swift */; };
+		B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C5A248E059A004D5438 /* StandardWindowMover.swift */; };
 		B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454312489AC2000B68505 /* ShortcutManager.swift */; };
 		B26454342489AE2D00B68505 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454332489AE2D00B68505 /* WindowManager.swift */; };
 		B26454372489B0B500B68505 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26454362489B0B500B68505 /* MessageView.xib */; };
@@ -45,6 +48,9 @@
 		7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxedLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
 		B2614C53248DEEB7004D5438 /* WindowHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHistory.swift; sourceTree = "<group>"; };
+		B2614C56248E01D3004D5438 /* WindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMover.swift; sourceTree = "<group>"; };
+		B2614C58248E0241004D5438 /* BestWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWindowMover.swift; sourceTree = "<group>"; };
+		B2614C5A248E059A004D5438 /* StandardWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardWindowMover.swift; sourceTree = "<group>"; };
 		B26454312489AC2000B68505 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		B26454332489AE2D00B68505 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
 		B26454362489B0B500B68505 /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
@@ -115,6 +121,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B2614C55248DFF76004D5438 /* WindowMover */ = {
+			isa = PBXGroup;
+			children = (
+				B2614C56248E01D3004D5438 /* WindowMover.swift */,
+				B2614C58248E0241004D5438 /* BestWindowMover.swift */,
+				B2614C5A248E059A004D5438 /* StandardWindowMover.swift */,
+			);
+			path = WindowMover;
+			sourceTree = "<group>";
+		};
 		B26454352489B09500B68505 /* Popover */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +184,7 @@
 		B29562982487374C006BE8FA /* Boxed */ = {
 			isa = PBXGroup;
 			children = (
+				B2614C55248DFF76004D5438 /* WindowMover */,
 				B26CAC4E248C525B00A8CCDC /* Snapping */,
 				B2C2BEF7248B8B4200340919 /* Accessibility */,
 				B2C2BEF4248B86B900340919 /* WindowCalculations */,
@@ -436,8 +453,11 @@
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B2C2BEF3248B856800340919 /* BoxedStatusItem.swift in Sources */,
 				B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */,
+				B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */,
 				B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
+				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
+				B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */,
 				B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */,
 				B26454392489B0DA00B68505 /* MessageView.swift in Sources */,
 				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
