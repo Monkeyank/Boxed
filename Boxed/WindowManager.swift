@@ -10,6 +10,11 @@ import Cocoa
 
 class WindowManager {
     
+    private let gapSize = Defaults.gapSize.value
+    private let fixedSizeWindowMoverChain: [WindowMover]
+    private let standardWindowMoverhain: [WindowMover]
+    private let screenDetection = ScreenDetection()
+    
 }
 
 struct BoxedAction {

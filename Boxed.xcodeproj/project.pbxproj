@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
+		B2530FBD248EE91F00452624 /* RepeatedExecutionsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */; };
+		B2530FBF248EEA2B00452624 /* WindowCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2530FBE248EEA2B00452624 /* WindowCalculation.swift */; };
 		B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C53248DEEB7004D5438 /* WindowHistory.swift */; };
 		B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C56248E01D3004D5438 /* WindowMover.swift */; };
 		B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C58248E0241004D5438 /* BestWindowMover.swift */; };
@@ -49,6 +51,8 @@
 		44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.release.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.release.xcconfig"; sourceTree = "<group>"; };
 		7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxedLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
+		B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedExecutionsCalculation.swift; sourceTree = "<group>"; };
+		B2530FBE248EEA2B00452624 /* WindowCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCalculation.swift; sourceTree = "<group>"; };
 		B2614C53248DEEB7004D5438 /* WindowHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHistory.swift; sourceTree = "<group>"; };
 		B2614C56248E01D3004D5438 /* WindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMover.swift; sourceTree = "<group>"; };
 		B2614C58248E0241004D5438 /* BestWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWindowMover.swift; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				B2C2BEF5248B87B500340919 /* GapCalculation.swift */,
+				B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */,
+				B2530FBE248EEA2B00452624 /* WindowCalculation.swift */,
 			);
 			path = WindowCalculations;
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
 				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
 				B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */,
+				B2530FBF248EEA2B00452624 /* WindowCalculation.swift in Sources */,
 				B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */,
 				B26454392489B0DA00B68505 /* MessageView.swift in Sources */,
 				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
@@ -481,6 +488,7 @@
 				B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */,
 				B264543B2489B2C300B68505 /* Defaults.swift in Sources */,
 				B2C2BEFB248B8B7700340919 /* AcessibilityWindowController.swift in Sources */,
+				B2530FBD248EE91F00452624 /* RepeatedExecutionsCalculation.swift in Sources */,
 				B26CAC52248C528000A8CCDC /* SnappingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
