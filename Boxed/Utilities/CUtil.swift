@@ -17,7 +17,7 @@ class CUtil {
     }
     
     static func bridge<T : AnyObject>(ptr: UnsafeMutableRawPointer) -> T {
-        return UnsafeMutableRawPointer(ptr).takeUnretainedValue()
+        return Unmanaged<T>.fromOpaque(ptr).takeUnretainedValue()
     }
 }
 
