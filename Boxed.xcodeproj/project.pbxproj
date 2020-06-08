@@ -12,6 +12,8 @@
 		B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C56248E01D3004D5438 /* WindowMover.swift */; };
 		B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C58248E0241004D5438 /* BestWindowMover.swift */; };
 		B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C5A248E059A004D5438 /* StandardWindowMover.swift */; };
+		B2614C5D248E0697004D5438 /* QuantizedWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C5C248E0697004D5438 /* QuantizedWindowMover.swift */; };
+		B2614C5F248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C5E248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift */; };
 		B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454312489AC2000B68505 /* ShortcutManager.swift */; };
 		B26454342489AE2D00B68505 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26454332489AE2D00B68505 /* WindowManager.swift */; };
 		B26454372489B0B500B68505 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26454362489B0B500B68505 /* MessageView.xib */; };
@@ -51,6 +53,8 @@
 		B2614C56248E01D3004D5438 /* WindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMover.swift; sourceTree = "<group>"; };
 		B2614C58248E0241004D5438 /* BestWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWindowMover.swift; sourceTree = "<group>"; };
 		B2614C5A248E059A004D5438 /* StandardWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardWindowMover.swift; sourceTree = "<group>"; };
+		B2614C5C248E0697004D5438 /* QuantizedWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantizedWindowMover.swift; sourceTree = "<group>"; };
+		B2614C5E248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteringFixedSizeWindowMover.swift; sourceTree = "<group>"; };
 		B26454312489AC2000B68505 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		B26454332489AE2D00B68505 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
 		B26454362489B0B500B68505 /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				B2614C56248E01D3004D5438 /* WindowMover.swift */,
 				B2614C58248E0241004D5438 /* BestWindowMover.swift */,
 				B2614C5A248E059A004D5438 /* StandardWindowMover.swift */,
+				B2614C5C248E0697004D5438 /* QuantizedWindowMover.swift */,
+				B2614C5E248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift */,
 			);
 			path = WindowMover;
 			sourceTree = "<group>";
@@ -452,8 +458,10 @@
 				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B2C2BEF3248B856800340919 /* BoxedStatusItem.swift in Sources */,
+				B2614C5D248E0697004D5438 /* QuantizedWindowMover.swift in Sources */,
 				B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */,
 				B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */,
+				B2614C5F248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift in Sources */,
 				B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
 				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
