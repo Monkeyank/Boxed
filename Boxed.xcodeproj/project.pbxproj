@@ -29,6 +29,7 @@
 		B282C79124882B31000D40F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282C79024882B31000D40F4 /* AppDelegate.swift */; };
 		B282C79524882B32000D40F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B282C79424882B32000D40F4 /* Assets.xcassets */; };
 		B282C79B24882B32000D40F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B282C79924882B32000D40F4 /* Main.storyboard */; };
+		B28C14452490B08300D5052D /* AlmostMaximizeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28C14442490B08300D5052D /* AlmostMaximizeCalculation.swift */; };
 		B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29562992487374C006BE8FA /* AppDelegate.swift */; };
 		B295629E2487374F006BE8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B295629D2487374F006BE8FA /* Assets.xcassets */; };
 		B29562A42487374F006BE8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29562A22487374F006BE8FA /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		B282C79A24882B32000D40F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B282C79C24882B32000D40F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B282C79D24882B32000D40F4 /* BoxedLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoxedLauncher.entitlements; sourceTree = "<group>"; };
+		B28C14442490B08300D5052D /* AlmostMaximizeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmostMaximizeCalculation.swift; sourceTree = "<group>"; };
 		B29562962487374B006BE8FA /* Boxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29562992487374C006BE8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B295629D2487374F006BE8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				B2C2BEF5248B87B500340919 /* GapCalculation.swift */,
 				B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */,
 				B2530FBE248EEA2B00452624 /* WindowCalculation.swift */,
+				B28C14442490B08300D5052D /* AlmostMaximizeCalculation.swift */,
 			);
 			path = WindowCalculations;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				B2614C5F248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift in Sources */,
 				B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
+				B28C14452490B08300D5052D /* AlmostMaximizeCalculation.swift in Sources */,
 				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
 				B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */,
 				B2530FBF248EEA2B00452624 /* WindowCalculation.swift in Sources */,

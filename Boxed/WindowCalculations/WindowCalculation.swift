@@ -9,6 +9,41 @@
 import Cocoa
 
 protocol Calculation {
+    func calculate(_ window: Window, lastAction: BoxedAction?, usableScreens: UsableScreens, action: WindowAction) -> WindowCalculationResult?
+    
+    func calculateRect(_ window: Window, lastAction: BoxedAction?, visibleFrameOfScreen: CGRect, action: WindowAction) -> RectResult
+}
+
+class WindowCalculation: Calculation {
+    
+    func calculate(_ window: Window, lastAction: BoxedAction?, usableScreens: UsableScreens, action: WindowAction) -> WindowCalculationResult? {
+        
+        let rectResult = calculateRect(window, lastAction: lastAction, visibleFrameOfScreen: usableScreens.currentScreen.visibleFrame, action: action)
+        
+        if rectResult.rect.isNull {
+            return nil
+        }
+        
+        return WindowCalculationResult(rect: rectResult.rect, screen: usableScreens.currentScreen, resultingAction: action, resultingSubAction: rectResult.subAction)
+    }
+
+    func calculateRect(_ window: Window, lastAction: BoxedAction?, visibleFrameOfScreen: CGRect, action: WindowAction) -> RectResult {
+        return RectResult(CGRect.null)
+    }
+    
+    func rectCenteredWithinRect(_ rect1: CGRect, _ rect2: CGRect) -> Bool {
+        let centeredMidX = abs(rect2.midX - rect1.midX) <= 1.0
+        let centeredMidY = abs(rect2.midY - rect1.midY) <= 1.0
+        return rect1.contains(rect2) && centeredMidX && centeredMidY
+    }
+    
+    func rectFitsWithinRect(rect1: CGRect, rect2: CGRect) -> Bool {
+        return (rect1.width <= rect2.width) && (rect1.height <= rect2.height)
+    }
+    
+    func isLandscape(_ rect: CGRect) -> Bool {
+        return rect.width > rect.height
+    }
     
 }
 
