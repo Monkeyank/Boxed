@@ -72,5 +72,10 @@ struct WindowCalculationResult {
         self.resultingAction = resultingAction
         self.resultingSubAction = resultingSubAction
     }
+}
 
+class WindowFactoryResult {
+    func calculation(for action: WindowAction) -> WindowCalculation? {
+        
+    }
 }
