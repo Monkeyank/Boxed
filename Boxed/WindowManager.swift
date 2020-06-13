@@ -15,6 +15,9 @@ class WindowManager {
     private let standardWindowMoverhain: [WindowMover]
     private let screenDetection = ScreenDetection()
     
+    init(windowHistory: WindowHistory) {
+        
+    }
 }
 
 struct BoxedAction {
