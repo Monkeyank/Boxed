@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
+		B202E64A2495DE3400C49A80 /* ChangeSizeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202E6492495DE3400C49A80 /* ChangeSizeCalculation.swift */; };
 		B21BE0992494B3830051C4FD /* CenterCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE0982494B3830051C4FD /* CenterCalculation.swift */; };
 		B21BE09B2494B5060051C4FD /* Maximize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09A2494B5060051C4FD /* Maximize.swift */; };
 		B21BE09D2494B5610051C4FD /* MaximizeHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09C2494B5610051C4FD /* MaximizeHeight.swift */; };
@@ -56,6 +57,7 @@
 		44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.release.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.release.xcconfig"; sourceTree = "<group>"; };
 		7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxedLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
+		B202E6492495DE3400C49A80 /* ChangeSizeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSizeCalculation.swift; sourceTree = "<group>"; };
 		B21BE0982494B3830051C4FD /* CenterCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCalculation.swift; sourceTree = "<group>"; };
 		B21BE09A2494B5060051C4FD /* Maximize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maximize.swift; sourceTree = "<group>"; };
 		B21BE09C2494B5610051C4FD /* MaximizeHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeHeight.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				B21BE09A2494B5060051C4FD /* Maximize.swift */,
 				B21BE09C2494B5610051C4FD /* MaximizeHeight.swift */,
 				B21BE09E2494B5930051C4FD /* NextPreviousDisplayCalculation.swift */,
+				B202E6492495DE3400C49A80 /* ChangeSizeCalculation.swift */,
 			);
 			path = WindowCalculations;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B202E64A2495DE3400C49A80 /* ChangeSizeCalculation.swift in Sources */,
 				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B21BE09F2494B5930051C4FD /* NextPreviousDisplayCalculation.swift in Sources */,
