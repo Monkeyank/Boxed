@@ -13,6 +13,7 @@
 		B21BE09B2494B5060051C4FD /* Maximize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09A2494B5060051C4FD /* Maximize.swift */; };
 		B21BE09D2494B5610051C4FD /* MaximizeHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09C2494B5610051C4FD /* MaximizeHeight.swift */; };
 		B21BE09F2494B5930051C4FD /* NextPreviousDisplayCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09E2494B5930051C4FD /* NextPreviousDisplayCalculation.swift */; };
+		B24D65452497496500C404C8 /* BottomHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D65442497496500C404C8 /* BottomHalfCalculation.swift */; };
 		B2530FBD248EE91F00452624 /* RepeatedExecutionsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */; };
 		B2530FBF248EEA2B00452624 /* WindowCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2530FBE248EEA2B00452624 /* WindowCalculation.swift */; };
 		B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2614C53248DEEB7004D5438 /* WindowHistory.swift */; };
@@ -62,6 +63,7 @@
 		B21BE09A2494B5060051C4FD /* Maximize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maximize.swift; sourceTree = "<group>"; };
 		B21BE09C2494B5610051C4FD /* MaximizeHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeHeight.swift; sourceTree = "<group>"; };
 		B21BE09E2494B5930051C4FD /* NextPreviousDisplayCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPreviousDisplayCalculation.swift; sourceTree = "<group>"; };
+		B24D65442497496500C404C8 /* BottomHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomHalfCalculation.swift; sourceTree = "<group>"; };
 		B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedExecutionsCalculation.swift; sourceTree = "<group>"; };
 		B2530FBE248EEA2B00452624 /* WindowCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCalculation.swift; sourceTree = "<group>"; };
 		B2614C53248DEEB7004D5438 /* WindowHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHistory.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				B21BE09C2494B5610051C4FD /* MaximizeHeight.swift */,
 				B21BE09E2494B5930051C4FD /* NextPreviousDisplayCalculation.swift */,
 				B202E6492495DE3400C49A80 /* ChangeSizeCalculation.swift */,
+				B24D65442497496500C404C8 /* BottomHalfCalculation.swift */,
 			);
 			path = WindowCalculations;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
 				B21BE09D2494B5610051C4FD /* MaximizeHeight.swift in Sources */,
+				B24D65452497496500C404C8 /* BottomHalfCalculation.swift in Sources */,
 				B28C14452490B08300D5052D /* AlmostMaximizeCalculation.swift in Sources */,
 				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
 				B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */,
