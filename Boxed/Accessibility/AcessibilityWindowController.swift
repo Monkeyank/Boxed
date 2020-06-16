@@ -22,3 +22,9 @@ class AccessibilityWindowController: NSWindowController {
     }
 }
 
+class AccessibilityViewController: NSViewController {
+    
+    @IBAction func openSystemPrefs(_ sender: Any) {
+        NSWorkspace.shared.open(URL(string:"x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility")!)
+    }
+}

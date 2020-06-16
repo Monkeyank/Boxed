@@ -26,7 +26,7 @@ class WindowCalculation: Calculation {
         
         return WindowCalculationResult(rect: rectResult.rect, screen: usableScreens.currentScreen, resultingAction: action, resultingSubAction: rectResult.subAction)
     }
-
+    
     func calculateRect(_ window: Window, lastAction: BoxedAction?, visibleFrameOfScreen: CGRect, action: WindowAction) -> RectResult {
         return RectResult(CGRect.null)
     }
@@ -64,18 +64,41 @@ struct Window {
 
 struct WindowCalculationResult {
     var rect: CGRect
+    let screen: NSScreen
     let resultingAction: WindowAction
     let resultingSubAction: SubWindowAction?
     
-    init(rect: CGRect, screen: NSScreen, resultingAction: WindowAction, resultingSubAction: SubWindowAction? = nil) {
+    init(rect: CGRect, screen: NSScreen, resultingAction: WindowAction,  resultingSubAction: SubWindowAction? = nil) {
         self.rect = rect
+        self.screen = screen
         self.resultingAction = resultingAction
         self.resultingSubAction = resultingSubAction
     }
 }
 
-class WindowFactoryResult {
+class WindowCalculationFactory {
+    
+    let bottomHalfCalculation = BottomHalfCalculation()
+    let topHalfCalculation = TopHalfCalculation()
+    let centerCalculation = CenterCalculation()
+    let nextPreviousDisplayCalculation = NextPreviousDisplayCalculation()
+    let maximizeCalculation = MaximizeCalculation()
+    let changeSizeCalculation = ChangeSizeCalculation()
+    let almostMaximizeCalculation = AlmostMaximizeCalculation()
+    let maxHeightCalculation = MaximizeHeightCalculation()
+    
     func calculation(for action: WindowAction) -> WindowCalculation? {
-        
+        switch action {
+        case .maximizeHeight: return maxHeightCalculation
+        case .previousDisplay: return nextPreviousDisplayCalculation
+        case .nextDisplay: return nextPreviousDisplayCalculation
+        case .larger: return changeSizeCalculation
+        case .smaller: return changeSizeCalculation
+        case .bottomHalf: return bottomHalfCalculation
+        case .topHalf: return topHalfCalculation
+        case .center: return centerCalculation
+        case .almostMaximize: return almostMaximizeCalculation
+        default: return nil
+        }
     }
 }
