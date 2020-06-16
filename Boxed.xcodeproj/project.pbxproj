@@ -52,6 +52,7 @@
 		B2C2BEF9248B8B6100340919 /* AccessibilityAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2BEF8248B8B6100340919 /* AccessibilityAuthorization.swift */; };
 		B2C2BEFB248B8B7700340919 /* AcessibilityWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2BEFA248B8B7700340919 /* AcessibilityWindowController.swift */; };
 		B2CFB1AB24988A0E001F058E /* TopHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */; };
+		B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */; };
 		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		B2C2BEF8248B8B6100340919 /* AccessibilityAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAuthorization.swift; sourceTree = "<group>"; };
 		B2C2BEFA248B8B7700340919 /* AcessibilityWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityWindowController.swift; sourceTree = "<group>"; };
 		B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHalfCalculation.swift; sourceTree = "<group>"; };
+		B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationToggle.swift; sourceTree = "<group>"; };
 		C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.debug.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.release.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.release.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				B26454312489AC2000B68505 /* ShortcutManager.swift */,
 				B2C2BEF2248B856800340919 /* BoxedStatusItem.swift */,
 				B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */,
+				B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */,
 				B26454332489AE2D00B68505 /* WindowManager.swift */,
 				B2614C53248DEEB7004D5438 /* WindowHistory.swift */,
 				B2C2BEF0248B831D00340919 /* WindowAction.swift */,
@@ -485,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */,
 				B202E64A2495DE3400C49A80 /* ChangeSizeCalculation.swift in Sources */,
 				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,

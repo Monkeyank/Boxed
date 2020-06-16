@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class AcessibilityAuthorization {
+class AccessibilityAuthorization {
     private var accessibilityWindowController: NSWindowController?
     
     public func checkAccessibility(completion: @escaping () -> Void) -> Bool {
