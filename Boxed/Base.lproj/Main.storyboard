@@ -687,9 +687,7 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="j9Z-vh-Nhm"/>
-                        <menuItem title="Preferences..." id="Mhm-aT-unC" userLabel="Preferences...">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
+                        <menuItem title="Preferences..." keyEquivalent="," id="Mhm-aT-unC" userLabel="Preferences..."/>
                         <menuItem title="About" id="vKo-8q-1Ud" userLabel="About">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
@@ -722,7 +720,7 @@
         <!--Window Controller-->
         <scene sceneID="jC3-GP-Tbp">
             <objects>
-                <windowController id="Ovd-sb-nMU" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="PrefsWindowController" id="Ovd-sb-nMU" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="tWX-9z-LD2">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -743,43 +741,17 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="Ers-8R-27l" kind="relationship" relationship="window.shadowedContentViewController" id="QXw-7d-g2E"/>
+                        <segue destination="tBx-z7-9Qs" kind="relationship" relationship="window.shadowedContentViewController" id="xdo-M3-BTY"/>
                     </connections>
                 </windowController>
                 <customObject id="sVR-K4-Lfo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="301"/>
         </scene>
-        <!--Tab View Controller-->
-        <scene sceneID="i1W-7K-8XG">
-            <objects>
-                <tabViewController id="Ers-8R-27l" sceneMemberID="viewController">
-                    <tabViewItems>
-                        <tabViewItem identifier="" id="gTU-AQ-TIA"/>
-                        <tabViewItem identifier="" id="TkO-OE-iod"/>
-                    </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="hDm-Iw-z3M">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="system"/>
-                        <connections>
-                            <outlet property="delegate" destination="Ers-8R-27l" id="Jc3-va-F5V"/>
-                        </connections>
-                    </tabView>
-                    <connections>
-                        <outlet property="tabView" destination="hDm-Iw-z3M" id="2nt-Gh-QJa"/>
-                        <segue destination="j1B-U1-fmM" kind="relationship" relationship="tabItems" id="8Sl-9W-vp7"/>
-                        <segue destination="gFR-tF-6qn" kind="relationship" relationship="tabItems" id="exc-Vl-M3U"/>
-                    </connections>
-                </tabViewController>
-                <customObject id="Hyd-pm-f44" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="74" y="716"/>
-        </scene>
         <!--Prefs View Controller-->
         <scene sceneID="lPF-P7-xMV">
             <objects>
-                <viewController id="j1B-U1-fmM" userLabel="Prefs View Controller" customClass="PrefsViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrefsViewController" id="j1B-U1-fmM" userLabel="Prefs View Controller" customClass="PrefsViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="biv-yS-5Vm">
                         <rect key="frame" x="0.0" y="0.0" width="697" height="395"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2202,7 +2174,7 @@
         <!--Settings View Controller-->
         <scene sceneID="MCR-h8-BYp">
             <objects>
-                <viewController id="gFR-tF-6qn" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="gFR-tF-6qn" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="twn-v6-bTU">
                         <rect key="frame" x="0.0" y="0.0" width="490" height="286"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2402,7 +2374,7 @@
         <!--Window Controller-->
         <scene sceneID="jys-zw-OL1">
             <objects>
-                <windowController id="zRe-YE-HL9" customClass="AccessibilityWindowController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="AccessibilityWindowController" id="zRe-YE-HL9" customClass="AccessibilityWindowController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="rXF-d5-zOp">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -2423,7 +2395,7 @@
         <!--Window Controller-->
         <scene sceneID="wPf-XF-1kC">
             <objects>
-                <windowController id="N7e-ea-h47" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="WelcomeWindowController" id="N7e-ea-h47" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="TP5-dc-7eF">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -2444,7 +2416,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="sAh-Q6-AcQ">
             <objects>
-                <viewController id="LF3-hb-Qff" customClass="WelcomeViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="LF3-hb-Qff" customClass="WelcomeViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Tc3-kT-8YJ">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="306"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2656,6 +2628,33 @@ DQ
                 <customObject id="KEZ-aD-iwf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="599"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="2Xj-7l-Q2y">
+            <objects>
+                <tabViewController tabStyle="toolbar" canPropagateSelectedChildViewControllerTitle="NO" id="tBx-z7-9Qs" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem id="Y9i-aH-eO6" userLabel="Keyboard Shortcuts"/>
+                        <tabViewItem id="c3U-Li-7tb" userLabel="Settings"/>
+                    </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
+                    <tabView key="tabView" type="noTabsNoBorder" id="Rxs-sU-R29">
+                        <rect key="frame" x="-126" y="0.0" width="453" height="261"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <outlet property="delegate" destination="tBx-z7-9Qs" id="gnL-Fe-Off"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="Rxs-sU-R29" id="fAu-tM-Pws"/>
+                        <segue destination="j1B-U1-fmM" kind="relationship" relationship="tabItems" id="GcW-Fv-1gi"/>
+                        <segue destination="gFR-tF-6qn" kind="relationship" relationship="tabItems" id="BmQ-t4-Xyu"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="itb-5j-Sdi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="739"/>
         </scene>
     </scenes>
     <resources>
