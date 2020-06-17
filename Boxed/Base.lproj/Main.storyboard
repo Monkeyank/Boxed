@@ -2166,6 +2166,14 @@
                             <constraint firstAttribute="trailing" secondItem="Trg-R5-jzy" secondAttribute="trailing" id="gXn-FD-ghR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomHalfShortcutView" destination="i2F-TB-6D0" id="DdD-sC-4Ef"/>
+                        <outlet property="leftHalfShortcutView" destination="8hx-Oq-rlx" id="ygG-Ly-g8E"/>
+                        <outlet property="rightHalfShortcutView" destination="ECE-Gf-C0h" id="kBp-Gr-R3r"/>
+                        <outlet property="topHalfShortcutView" destination="abq-jX-LO7" id="UTq-qQ-8Ek"/>
+                        <outlet property="topLeftShortcutView" destination="isB-02-dvl" id="roo-26-CKr"/>
+                        <outlet property="topRightShortcutView" destination="ON5-Sl-nIA" id="3MD-Yz-wBb"/>
+                    </connections>
                 </viewController>
                 <customObject id="EUc-E4-iBi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
