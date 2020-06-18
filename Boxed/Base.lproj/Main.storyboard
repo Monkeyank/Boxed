@@ -676,7 +676,11 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Boxed" customModuleProvider="target">
                     <connections>
+                        <outlet property="ignoreMenuItem" destination="uQ5-VB-2ZH" id="wcV-ML-CwH"/>
                         <outlet property="mainStatusMenu" destination="BMw-dq-dof" id="2WF-J6-NWh"/>
+                        <outlet property="quitMenuItem" destination="4hr-P8-lLP" id="s2O-Cj-bYZ"/>
+                        <outlet property="unauthorizedMenu" destination="Ct1-YS-uHJ" id="cNy-ls-F56"/>
+                        <outlet property="viewLoggingMenuItem" destination="9mH-cx-xld" id="3BD-1y-D6K"/>
                     </connections>
                 </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -685,17 +689,33 @@
                     <items>
                         <menuItem title="Ignore frontmost.app" id="uQ5-VB-2ZH" userLabel="Ignore frontmost.app">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="ignoreFrontMostApp:" target="Voe-Tx-rLC" id="9LE-U1-rit"/>
+                            </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="j9Z-vh-Nhm"/>
-                        <menuItem title="Preferences..." keyEquivalent="," id="Mhm-aT-unC" userLabel="Preferences..."/>
+                        <menuItem title="Preferences..." keyEquivalent="," id="Mhm-aT-unC" userLabel="Preferences...">
+                            <connections>
+                                <action selector="openPreferences:" target="Voe-Tx-rLC" id="tah-5e-SZr"/>
+                            </connections>
+                        </menuItem>
                         <menuItem title="About" id="vKo-8q-1Ud" userLabel="About">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="showAbout:" target="Voe-Tx-rLC" id="Ebc-qc-uQz"/>
+                            </connections>
                         </menuItem>
-                        <menuItem title="Item" id="9mH-cx-xld" userLabel="View Logging">
+                        <menuItem title="View Logging" id="9mH-cx-xld" userLabel="View Logging">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="viewLogging:" target="Voe-Tx-rLC" id="iKn-OI-1ZB"/>
+                            </connections>
                         </menuItem>
-                        <menuItem title="Item" id="FGs-gF-9xy" userLabel="Check for Updates">
+                        <menuItem title="Check for Updates" id="FGs-gF-9xy" userLabel="Check for Updates">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="tJs-zx-UK0"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Quit Boxed" keyEquivalent="q" id="4hr-P8-lLP" userLabel="Quit Boxed"/>
                     </items>
@@ -707,9 +727,15 @@
                         </menuItem>
                         <menuItem title="Authorize" id="sJS-EW-tdC" userLabel="Authorize...">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="authorizeAccessibility:" target="Voe-Tx-rLC" id="aZm-0z-WCJ"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="About" id="WJa-L0-N3l" userLabel="About">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="orderFrontStandardAboutPanel:" target="hnw-xV-0zn" id="FXY-Sh-Utg"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Quit Boxed" keyEquivalent="q" id="WJb-sr-jkd" userLabel="Quit Boxed"/>
                     </items>
@@ -2202,6 +2228,9 @@
                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="toggleLaunchOnLogin:" target="gFR-tF-6qn" id="R1n-uW-KTT"/>
+                                                </connections>
                                             </button>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="16T-QT-WNQ">
                                                 <rect key="frame" x="402" y="0.0" width="50" height="16"/>
@@ -2236,6 +2265,9 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="toggleWindowSnapping:" target="gFR-tF-6qn" id="lwi-H0-fis"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5iI-sE-EUA">
                                         <rect key="frame" x="-2" y="139" width="454" height="18"/>
@@ -2246,6 +2278,9 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="toggleHideMenuBarIcon:" target="gFR-tF-6qn" id="0XJ-Tg-FPV"/>
+                                        </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="AJb-EI-fkS">
                                         <rect key="frame" x="-2" y="117" width="454" height="14"/>
@@ -2253,7 +2288,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="68C-DM-Oc4"/>
                                         </constraints>
                                         <textFieldCell key="cell" title="When the menu bar icon is hidden, relaunch Boxed from Finder to open." id="rpe-Sl-5wN">
-                                            <font key="font" metaFont="label" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2267,6 +2302,9 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="toggleSubsequentExecutionBehavior:" target="gFR-tF-6qn" id="Ixp-eb-XuO"/>
+                                        </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="iwG-lp-b19">
                                         <rect key="frame" x="-2" y="55" width="454" height="28"/>
@@ -2274,7 +2312,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="rEL-Tx-amT"/>
                                         </constraints>
                                         <textFieldCell key="cell" title="If you repeat move or half actions, the window will move to the next display instead of 1/2, 2/3, and 1/3 size." id="O6l-cD-G4A">
-                                            <font key="font" metaFont="label" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2288,6 +2326,9 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="toggleAllowAnyShortcut:" target="gFR-tF-6qn" id="EZt-Rn-t6J"/>
+                                        </connections>
                                     </button>
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfC-87-nYa">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="21"/>
@@ -2311,6 +2352,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="checkForUpdates:" target="gFR-tF-6qn" id="mWK-cZ-dhJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -2362,6 +2406,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="restoreDefaults:" target="gFR-tF-6qn" id="ntM-C8-35O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -2403,6 +2450,7 @@
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="window" destination="rXF-d5-zOp" id="Zcc-tu-Pp4"/>
                         <segue destination="bvU-Cn-kIO" kind="relationship" relationship="window.shadowedContentViewController" id="jPy-6V-pVm"/>
                     </connections>
                 </windowController>
@@ -2495,7 +2543,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-95-hZh">
                                         <rect key="frame" x="-2" y="50" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Spectacle shortcuts are more likely to conflict with other shortcuts" id="wzX-Ev-GCB">
-                                            <font key="font" metaFont="label" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2503,7 +2551,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fFs-To-sai">
                                         <rect key="frame" x="-2" y="0.0" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Choosing Spectacle will also cycle 1/2, 2/3, and 1/3 window widths on repeated shortcuts" id="ksD-Ve-dzy">
-                                            <font key="font" metaFont="label" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2579,7 +2627,7 @@ DQ
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-la-Yb5">
                                         <rect key="frame" x="-2" y="137" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Go to System Preferences → Security &amp; Privacy → Privacy → Accessibility" id="3We-DQ-daT">
-                                            <font key="font" metaFont="label" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -2593,6 +2641,9 @@ DQ
 DQ
 </string>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="openSystemPrefs:" target="bvU-Cn-kIO" id="yC4-2A-hsW"/>
+                                        </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmI-64-rhO">
                                         <rect key="frame" x="70" y="54" width="111" height="16"/>
