@@ -2450,8 +2450,7 @@
                         </connections>
                     </window>
                     <connections>
-                        <outlet property="window" destination="rXF-d5-zOp" id="Zcc-tu-Pp4"/>
-                        <segue destination="bvU-Cn-kIO" kind="relationship" relationship="window.shadowedContentViewController" id="jPy-6V-pVm"/>
+                        <segue destination="bvU-Cn-kIO" kind="relationship" relationship="window.shadowedContentViewController" id="EB7-O7-tkK"/>
                     </connections>
                 </windowController>
                 <customObject id="AQE-9f-bgd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -2592,7 +2591,7 @@ DQ
         <!--Accessibility View Controller-->
         <scene sceneID="IFP-aL-s34">
             <objects>
-                <viewController id="bvU-Cn-kIO" userLabel="Accessibility View Controller" customClass="AccessibilityViewController" sceneMemberID="viewController">
+                <viewController id="bvU-Cn-kIO" userLabel="Accessibility View Controller" customClass="AccessibilityViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ujN-70-v8x">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="389"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2727,32 +2726,32 @@ DQ
         </scene>
     </scenes>
     <resources>
-        <image name="Untilted" width="128" height="128"/>
-        <image name="almostMaximizeTemplate" width="128" height="128"/>
-        <image name="bottomHalfTemplate" width="128" height="128"/>
-        <image name="bottomLeftTemplate" width="128" height="128"/>
-        <image name="bottomRightTemplate" width="128" height="128"/>
-        <image name="centerTemplate" width="128" height="128"/>
-        <image name="centerThirdTemplate" width="128" height="128"/>
-        <image name="firstThirdTemplate" width="128" height="128"/>
-        <image name="firstTwoThirdsTemplate" width="128" height="128"/>
-        <image name="lastThirdTemplate" width="128" height="128"/>
-        <image name="lastTwoThirdsTemplate" width="128" height="128"/>
-        <image name="leftHalfTemplate" width="128" height="128"/>
-        <image name="makeLargerTemplate" width="128" height="128"/>
-        <image name="makeSmallerTemplate" width="128" height="128"/>
-        <image name="maximizeHeightTemplate" width="128" height="128"/>
-        <image name="maximizeTemplate" width="128" height="128"/>
-        <image name="moveDownTemplate" width="128" height="128"/>
-        <image name="moveLeftTemplate" width="128" height="128"/>
-        <image name="moveRightTemplate" width="128" height="128"/>
-        <image name="moveUpTemplate" width="128" height="128"/>
-        <image name="nextDisplayTemplate" width="128" height="128"/>
-        <image name="prevDisplayTemplate" width="128" height="128"/>
-        <image name="restoreTemplate" width="128" height="128"/>
-        <image name="rightHalfTemplate" width="128" height="128"/>
-        <image name="topHalfTemplate" width="128" height="128"/>
-        <image name="topLeftTemplate" width="128" height="128"/>
-        <image name="topRightTemplate" width="128" height="128"/>
+        <image name="Untilted" width="256" height="256"/>
+        <image name="almostMaximizeTemplate" width="30" height="20"/>
+        <image name="bottomHalfTemplate" width="30" height="20"/>
+        <image name="bottomLeftTemplate" width="30" height="20"/>
+        <image name="bottomRightTemplate" width="30" height="20"/>
+        <image name="centerTemplate" width="30" height="20"/>
+        <image name="centerThirdTemplate" width="30" height="20"/>
+        <image name="firstThirdTemplate" width="30" height="20"/>
+        <image name="firstTwoThirdsTemplate" width="30" height="20"/>
+        <image name="lastThirdTemplate" width="30" height="20"/>
+        <image name="lastTwoThirdsTemplate" width="30" height="20"/>
+        <image name="leftHalfTemplate" width="30" height="20"/>
+        <image name="makeLargerTemplate" width="30" height="20"/>
+        <image name="makeSmallerTemplate" width="30" height="20"/>
+        <image name="maximizeHeightTemplate" width="30" height="20"/>
+        <image name="maximizeTemplate" width="30" height="20"/>
+        <image name="moveDownTemplate" width="30" height="20"/>
+        <image name="moveLeftTemplate" width="30" height="20"/>
+        <image name="moveRightTemplate" width="30" height="20"/>
+        <image name="moveUpTemplate" width="30" height="20"/>
+        <image name="nextDisplayTemplate" width="30" height="20"/>
+        <image name="prevDisplayTemplate" width="30" height="20"/>
+        <image name="restoreTemplate" width="30" height="20"/>
+        <image name="rightHalfTemplate" width="30" height="20"/>
+        <image name="topHalfTemplate" width="30" height="20"/>
+        <image name="topLeftTemplate" width="30" height="20"/>
+        <image name="topRightTemplate" width="30" height="20"/>
     </resources>
 </document>
