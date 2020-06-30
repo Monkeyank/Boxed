@@ -108,4 +108,3 @@ class LeftRightHalfCalculation: WindowCalculation, RepeatedExecutionsCalculation
         }
     }
 }
-

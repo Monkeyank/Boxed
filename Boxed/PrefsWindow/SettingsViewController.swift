@@ -79,9 +79,9 @@ class SettingsViewController: NSViewController {
             hideMenuBarIconCheckbox.state = .on
         }
         
-        if Defaults.subsequentExecutionMode.value == .acrossMonitor {
-            subsequentExecutionCheckbox.state = .on
-        }
+//        if Defaults.subsequentExecutionMode.value == .acrossMonitor {
+//            subsequentExecutionCheckbox.state = .on
+//        }
         
         if Defaults.allowAnyShortcut.enabled {
             allowAnyShortcutCheckbox.state = .on
@@ -91,16 +91,16 @@ class SettingsViewController: NSViewController {
             windowSnappingCheckbox.state = .off
         }
         
-        if let updater = SUUpdater.shared() {
-            checkForUpdatesAutomaticallyCheckbox.bind(.value, to: updater, withKeyPath: "automaticallyChecksForUpdates", options: nil)
-        }
+//        if let updater = SUUpdater.shared() {
+//            checkForUpdatesAutomaticallyCheckbox.bind(.value, to: updater, withKeyPath: "automaticallyChecksForUpdates", options: nil)
+//        }
         
         let appVersionString: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
         let buildString: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
 
-        versionLabel.stringValue = "v" + appVersionString + " (" + buildString + ")"
+//        versionLabel.stringValue = "v" + appVersionString + " (" + buildString + ")"
         
-        checkForUpdatesButton.title = NSLocalizedString("HIK-3r-i7E.title", tableName: "Main", value: "Check for Updates…", comment: "")
+//        checkForUpdatesButton.title = NSLocalizedString("HIK-3r-i7E.title", tableName: "Main", value: "Check for Updates…", comment: "")
     }
 
 }

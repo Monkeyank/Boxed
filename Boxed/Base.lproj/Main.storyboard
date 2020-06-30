@@ -2193,8 +2193,28 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="almostMaximizeShortcutView" destination="0oo-H5-ekv" id="LOq-zg-Dnp"/>
                         <outlet property="bottomHalfShortcutView" destination="i2F-TB-6D0" id="DdD-sC-4Ef"/>
+                        <outlet property="bottomLeftShortcutView" destination="xYN-AV-off" id="d5y-Br-JBJ"/>
+                        <outlet property="bottomRightShortcutView" destination="vPr-T7-wFo" id="pMe-0u-bfg"/>
+                        <outlet property="centerShortcutView" destination="k2b-X9-Pnl" id="TJJ-6s-dp4"/>
+                        <outlet property="centerThirdShortcutView" destination="UZ3-hz-MZO" id="uxI-nU-K1l"/>
+                        <outlet property="firstThirdShortcutView" destination="NQU-o4-B7O" id="B2W-iE-Zh1"/>
+                        <outlet property="firstTwoThirdsShortcutView" destination="pgO-qx-aTO" id="vru-rQ-cvt"/>
+                        <outlet property="lastThirdShortcutView" destination="lP6-G0-sXe" id="ELF-e7-NUf"/>
+                        <outlet property="lastTwoThirdsShortcutView" destination="yv0-Sz-vMB" id="3GR-Du-6Uu"/>
                         <outlet property="leftHalfShortcutView" destination="8hx-Oq-rlx" id="ygG-Ly-g8E"/>
+                        <outlet property="makeLargerShortcutView" destination="k2b-X9-Pnl" id="HW5-tx-YKv"/>
+                        <outlet property="makeSmallerShortcutView" destination="T3G-Tv-UBb" id="Br9-Hs-63F"/>
+                        <outlet property="maximizeHeightShortcutView" destination="HKX-Cx-0UM" id="gun-d9-ddj"/>
+                        <outlet property="maximizeShortcutView" destination="3NB-fq-9hN" id="MDc-yD-f7N"/>
+                        <outlet property="moveDownShortcutView" destination="1Vc-4R-vND" id="vga-l8-x7U"/>
+                        <outlet property="moveLeftShortcutView" destination="bVK-R4-rq3" id="jfb-Ey-06o"/>
+                        <outlet property="moveRightShortcutView" destination="CIc-vX-yHj" id="dhz-pn-N74"/>
+                        <outlet property="moveUpShortcutView" destination="OD6-sX-9eb" id="8u3-C0-cOA"/>
+                        <outlet property="nextDisplayShortcutView" destination="kwO-2c-WgR" id="q4z-Po-8ul"/>
+                        <outlet property="previousDisplayShortcutView" destination="9Ho-ER-3D1" id="nRq-Pp-Jem"/>
+                        <outlet property="restoreShortcutView" destination="3Js-xl-7oz" id="zCH-q1-R8P"/>
                         <outlet property="rightHalfShortcutView" destination="ECE-Gf-C0h" id="kBp-Gr-R3r"/>
                         <outlet property="topHalfShortcutView" destination="abq-jX-LO7" id="UTq-qQ-8Ek"/>
                         <outlet property="topLeftShortcutView" destination="isB-02-dvl" id="roo-26-CKr"/>
@@ -2517,6 +2537,9 @@
 DQ
 </string>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="selectRecommended:" target="LF3-hb-Qff" id="kZA-Jw-9r4"/>
+                                                </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zyM-xy-7AV">
                                                 <rect key="frame" x="-6" y="-7" width="153" height="32"/>
@@ -2524,6 +2547,9 @@ DQ
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="selectSpectacle:" target="LF3-hb-Qff" id="mQT-j1-Fuh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -2641,7 +2667,7 @@ DQ
 </string>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="openSystemPrefs:" target="bvU-Cn-kIO" id="yC4-2A-hsW"/>
+                                            <action selector="openSystemPrefs:" target="bvU-Cn-kIO" id="UPI-xo-gkL"/>
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmI-64-rhO">
@@ -2722,7 +2748,7 @@ DQ
                 </tabViewController>
                 <customObject id="itb-5j-Sdi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73" y="739"/>
+            <point key="canvasLocation" x="72.5" y="738.5"/>
         </scene>
     </scenes>
     <resources>
