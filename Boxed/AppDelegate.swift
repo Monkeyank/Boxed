@@ -78,7 +78,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             for app in runningApps {
                 guard let bundleId = app.bundleIdentifier else { continue }
                 if let conflictingAppName = conflictingAppsIds[bundleId] {
-                    AlertUtil.oneButtonAlert(question: "Potential window manager conflict: \(conflictingAppName)", text: "Since \(conflictingAppName) might have some overlapping behavior with Rectangle, it's recommended that you either disable or quit \(conflictingAppName).")
+                    AlertUtil.oneButtonAlert(question: "Potential window manager conflict: \(conflictingAppName)", text: "Since \(conflictingAppName) might have some overlapping behavior with Boxed, it's recommended that you either disable or quit \(conflictingAppName).")
                     break
                 }
             }

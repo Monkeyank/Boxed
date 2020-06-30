@@ -64,11 +64,11 @@ class WindowManager {
         
         let currentWindowRect: CGRect = frontmostWindowElement.rectOfElement()
         
-        let lastRectangleAction = windowHistory.lastBoxedActions[windowId]
+        let lastBoxedAction = windowHistory.lastBoxedActions[windowId]
         
         if parameters.updateRestoreRect {
             if windowHistory.restoreRects[windowId] == nil
-                || currentWindowRect != lastRectangleAction?.rect {
+                || currentWindowRect != lastBoxedAction?.rect {
                 windowHistory.restoreRects[windowId] = currentWindowRect
             }
         }
@@ -88,7 +88,7 @@ class WindowManager {
         
         let windowCalculation = windowCalculationFactory.calculation(for: action)
         
-        guard var calcResult = windowCalculation?.calculate(currentWindow, lastAction: lastRectangleAction, usableScreens: usableScreens, action: action) else {
+        guard var calcResult = windowCalculation?.calculate(currentWindow, lastAction: lastBoxedAction, usableScreens: usableScreens, action: action) else {
             NSSound.beep()
             Logger.log("Nil calculation result")
             return
@@ -121,8 +121,8 @@ class WindowManager {
         let resultingRect = frontmostWindowElement.rectOfElement()
         
         var newCount = 1
-        if lastRectangleAction?.action == calcResult.resultingAction,
-            let currentCount = lastRectangleAction?.count {
+        if lastBoxedAction?.action == calcResult.resultingAction,
+            let currentCount = lastBoxedAction?.count {
             newCount = currentCount + 1
             newCount %= 3
         }

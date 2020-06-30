@@ -58,6 +58,7 @@
 		B2C2BEFB248B8B7700340919 /* AcessibilityWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2BEFA248B8B7700340919 /* AcessibilityWindowController.swift */; };
 		B2CFB1AB24988A0E001F058E /* TopHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */; };
 		B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */; };
+		B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0895A24AB259A00C114FA /* ServiceManagement.framework */; };
 		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		B2C2BEFA248B8B7700340919 /* AcessibilityWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityWindowController.swift; sourceTree = "<group>"; };
 		B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHalfCalculation.swift; sourceTree = "<group>"; };
 		B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationToggle.swift; sourceTree = "<group>"; };
+		B2E0895A24AB259A00C114FA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.debug.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.release.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */,
+				B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +323,7 @@
 		D43AF8538B1A49EA6C24DEF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2E0895A24AB259A00C114FA /* ServiceManagement.framework */,
 				DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */,
 				7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */,
 			);
