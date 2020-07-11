@@ -168,7 +168,7 @@ class SnappingManager {
         let initialRect = NSRect(x: 0, y: 0, width: 0, height: 0)
         let box = NSWindow(contentRect: initialRect, styleMask: .titled, backing: .buffered, defer: false)
         
-        box.title = "Rectangle"
+        box.title = "Boxed"
         box.backgroundColor = .clear
         box.isOpaque = false
         box.level = .modalPanel
