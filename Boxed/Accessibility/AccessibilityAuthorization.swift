@@ -32,15 +32,16 @@ class AccessibilityAuthorization {
                 self.accessibilityWindowController = nil
                 completion()
             } else {
-                self.pollAccessibility( completion: completion )
+                self.pollAccessibility(completion: completion)
             }
         }
     }
     
     func showAuthorizationWindow() {
         if accessibilityWindowController?.window?.isMiniaturized == true {
-                accessibilityWindowController?.window?.deminiaturize(self)
-            }
-            NSApp.activate(ignoringOtherApps: true)
+            accessibilityWindowController?.window?.deminiaturize(self)
         }
+        NSApp.activate(ignoringOtherApps: true)
+    }
+    
 }

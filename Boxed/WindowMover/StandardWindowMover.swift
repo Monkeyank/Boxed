@@ -10,13 +10,10 @@ import Foundation
 
 class StandardWindowMover: WindowMover {
     func moveWindowRect(_ windowRect: CGRect, frameOfScreen: CGRect, visibleFrameOfScreen: CGRect, frontmostWindowElement: AccessibilityElement?, action: WindowAction?) {
-        
         let previousWindowRect: CGRect? = frontmostWindowElement?.rectOfElement()
         if previousWindowRect?.isNull == true {
             return
         }
-        
         frontmostWindowElement?.setRectOf(windowRect)
-        
     }
 }

@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		54D0A8CBA7358AC45D0ABC79 /* Pods_BoxedLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */; };
 		B202E64A2495DE3400C49A80 /* ChangeSizeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202E6492495DE3400C49A80 /* ChangeSizeCalculation.swift */; };
+		B213980A24AEFDE500D613A0 /* FirstThirdCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213980924AEFDE500D613A0 /* FirstThirdCalculation.swift */; };
+		B213980C24AEFE0D00D613A0 /* FirstTwoThirdsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213980B24AEFE0D00D613A0 /* FirstTwoThirdsCalculation.swift */; };
+		B213980E24AEFE2900D613A0 /* CenterThirdCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213980D24AEFE2900D613A0 /* CenterThirdCalculation.swift */; };
+		B213981024AEFE8600D613A0 /* LastTwoThirdsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213980F24AEFE8600D613A0 /* LastTwoThirdsCalculation.swift */; };
+		B213981224AEFFB700D613A0 /* LastThirdCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213981124AEFFB700D613A0 /* LastThirdCalculation.swift */; };
+		B213981424AF01C400D613A0 /* MoveLeftRightHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213981324AF01C400D613A0 /* MoveLeftRightHalfCalculation.swift */; };
+		B213981624AF029300D613A0 /* MoveUpCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213981524AF029300D613A0 /* MoveUpCalculation.swift */; };
+		B213981824AF02AC00D613A0 /* MovveDownCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213981724AF02AC00D613A0 /* MovveDownCalculation.swift */; };
 		B21BE0992494B3830051C4FD /* CenterCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE0982494B3830051C4FD /* CenterCalculation.swift */; };
 		B21BE09B2494B5060051C4FD /* MaximizeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09A2494B5060051C4FD /* MaximizeCalculation.swift */; };
 		B21BE09D2494B5610051C4FD /* MaximizeHeightCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09C2494B5610051C4FD /* MaximizeHeightCalculation.swift */; };
@@ -59,14 +67,36 @@
 		B2CFB1AB24988A0E001F058E /* TopHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */; };
 		B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */; };
 		B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0895A24AB259A00C114FA /* ServiceManagement.framework */; };
+		B2F38DC524BA52710045517E /* BoxedLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = B282C78E24882B31000D40F4 /* BoxedLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2F38DC424BA52600045517E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				B2F38DC524BA52710045517E /* BoxedLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.release.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.release.xcconfig"; sourceTree = "<group>"; };
 		7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxedLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43D872846CF070C79221D0E /* Pods-Boxed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.debug.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.debug.xcconfig"; sourceTree = "<group>"; };
 		B202E6492495DE3400C49A80 /* ChangeSizeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSizeCalculation.swift; sourceTree = "<group>"; };
+		B213980924AEFDE500D613A0 /* FirstThirdCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstThirdCalculation.swift; sourceTree = "<group>"; };
+		B213980B24AEFE0D00D613A0 /* FirstTwoThirdsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTwoThirdsCalculation.swift; sourceTree = "<group>"; };
+		B213980D24AEFE2900D613A0 /* CenterThirdCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterThirdCalculation.swift; sourceTree = "<group>"; };
+		B213980F24AEFE8600D613A0 /* LastTwoThirdsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTwoThirdsCalculation.swift; sourceTree = "<group>"; };
+		B213981124AEFFB700D613A0 /* LastThirdCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastThirdCalculation.swift; sourceTree = "<group>"; };
+		B213981324AF01C400D613A0 /* MoveLeftRightHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveLeftRightHalfCalculation.swift; sourceTree = "<group>"; };
+		B213981524AF029300D613A0 /* MoveUpCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveUpCalculation.swift; sourceTree = "<group>"; };
+		B213981724AF02AC00D613A0 /* MovveDownCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovveDownCalculation.swift; sourceTree = "<group>"; };
 		B21BE0982494B3830051C4FD /* CenterCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCalculation.swift; sourceTree = "<group>"; };
 		B21BE09A2494B5060051C4FD /* MaximizeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeCalculation.swift; sourceTree = "<group>"; };
 		B21BE09C2494B5610051C4FD /* MaximizeHeightCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeHeightCalculation.swift; sourceTree = "<group>"; };
@@ -294,6 +324,9 @@
 				B2C2BEF5248B87B500340919 /* GapCalculation.swift */,
 				B21BE0982494B3830051C4FD /* CenterCalculation.swift */,
 				B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */,
+				B213981324AF01C400D613A0 /* MoveLeftRightHalfCalculation.swift */,
+				B213981524AF029300D613A0 /* MoveUpCalculation.swift */,
+				B213981724AF02AC00D613A0 /* MovveDownCalculation.swift */,
 				B2530FBE248EEA2B00452624 /* WindowCalculation.swift */,
 				B28C14442490B08300D5052D /* AlmostMaximizeCalculation.swift */,
 				B21BE09A2494B5060051C4FD /* MaximizeCalculation.swift */,
@@ -307,6 +340,11 @@
 				B295F50124AB0A0300E6E644 /* LowerRightCalculation.swift */,
 				B295F50324AB0A2E00E6E644 /* UpperLeftCalculation.swift */,
 				B295F50524AB0A3B00E6E644 /* UpperRightCalculation.swift */,
+				B213980924AEFDE500D613A0 /* FirstThirdCalculation.swift */,
+				B213980B24AEFE0D00D613A0 /* FirstTwoThirdsCalculation.swift */,
+				B213980D24AEFE2900D613A0 /* CenterThirdCalculation.swift */,
+				B213980F24AEFE8600D613A0 /* LastTwoThirdsCalculation.swift */,
+				B213981124AEFFB700D613A0 /* LastThirdCalculation.swift */,
 			);
 			path = WindowCalculations;
 			sourceTree = "<group>";
@@ -360,6 +398,7 @@
 				B29562932487374B006BE8FA /* Frameworks */,
 				B29562942487374B006BE8FA /* Resources */,
 				DE8449D8D102E924F7165487 /* [CP] Embed Pods Frameworks */,
+				B2F38DC424BA52600045517E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -510,16 +549,19 @@
 				B295F50024AB09D800E6E644 /* LowerLeftCalculation.swift in Sources */,
 				B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */,
 				B202E64A2495DE3400C49A80 /* ChangeSizeCalculation.swift in Sources */,
+				B213981224AEFFB700D613A0 /* LastThirdCalculation.swift in Sources */,
 				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B295F50624AB0A3B00E6E644 /* UpperRightCalculation.swift in Sources */,
 				B268995B2499EE28006766C6 /* LeftRightHalfCalculation.swift in Sources */,
 				B21BE09F2494B5930051C4FD /* NextPreviousDisplayCalculation.swift in Sources */,
+				B213981024AEFE8600D613A0 /* LastTwoThirdsCalculation.swift in Sources */,
 				B2C2BEF3248B856800340919 /* BoxedStatusItem.swift in Sources */,
 				B2CFB1AB24988A0E001F058E /* TopHalfCalculation.swift in Sources */,
 				B2614C5D248E0697004D5438 /* QuantizedWindowMover.swift in Sources */,
 				B2980AC324886670005C0E60 /* PrefsViewController.swift in Sources */,
 				B295F50424AB0A2E00E6E644 /* UpperLeftCalculation.swift in Sources */,
+				B213981624AF029300D613A0 /* MoveUpCalculation.swift in Sources */,
 				B21BE0992494B3830051C4FD /* CenterCalculation.swift in Sources */,
 				B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */,
 				B2614C5F248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift in Sources */,
@@ -531,11 +573,14 @@
 				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
 				B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */,
 				B21BE09B2494B5060051C4FD /* MaximizeCalculation.swift in Sources */,
+				B213980A24AEFDE500D613A0 /* FirstThirdCalculation.swift in Sources */,
+				B213981424AF01C400D613A0 /* MoveLeftRightHalfCalculation.swift in Sources */,
 				B2530FBF248EEA2B00452624 /* WindowCalculation.swift in Sources */,
 				B2980AC52488668D005C0E60 /* SettingsViewController.swift in Sources */,
 				B26454392489B0DA00B68505 /* MessageView.swift in Sources */,
 				B2980AC92488689B005C0E60 /* AlertUtil.swift in Sources */,
 				B26454342489AE2D00B68505 /* WindowManager.swift in Sources */,
+				B213980C24AEFE0D00D613A0 /* FirstTwoThirdsCalculation.swift in Sources */,
 				B2C2BEF9248B8B6100340919 /* AccessibilityAuthorization.swift in Sources */,
 				B2980AC7248867E4005C0E60 /* CUtil.swift in Sources */,
 				B26CAC54248C74BE00A8CCDC /* ScreenDetection.swift in Sources */,
@@ -546,7 +591,9 @@
 				B26CAC4C248C4EB900A8CCDC /* AccessibilityElement.swift in Sources */,
 				B2C2BEF1248B831D00340919 /* WindowAction.swift in Sources */,
 				B26454322489AC2000B68505 /* ShortcutManager.swift in Sources */,
+				B213981824AF02AC00D613A0 /* MovveDownCalculation.swift in Sources */,
 				B264543B2489B2C300B68505 /* Defaults.swift in Sources */,
+				B213980E24AEFE2900D613A0 /* CenterThirdCalculation.swift in Sources */,
 				B2C2BEFB248B8B7700340919 /* AcessibilityWindowController.swift in Sources */,
 				B2530FBD248EE91F00452624 /* RepeatedExecutionsCalculation.swift in Sources */,
 				B26CAC52248C528000A8CCDC /* SnappingManager.swift in Sources */,
@@ -740,6 +787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Boxed/Boxed.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 63QM8F2SFJ;
@@ -750,7 +798,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.monkeyank.Boxed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -763,6 +811,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Boxed/Boxed.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 63QM8F2SFJ;
@@ -773,7 +822,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.monkeyank.Boxed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -9,13 +9,10 @@
 import Foundation
 
 class Defaults {
-    
     static let launchOnLogin = BoolDefault(key: "launchOnLogin")
     static let disabledApps = StringDefault(key: "disabledApps")
     static let hideMenuBarIcon = BoolDefault(key: "hideMenubarIcon")
-    
-    // Found Shortcut alternatives from Magnet Window Resizer defaults
-    static let alternateDefaultShortcuts = BoolDefault(key: "alternateDefaultShortcuts")
+    static let alternateDefaultShortcuts = BoolDefault(key: "alternateDefaultShortcuts") // switch to magnet defaults
     static let subsequentExecutionMode = SubsequentExecutionDefault()
     static let allowAnyShortcut = BoolDefault(key: "allowAnyShortcut")
     static let windowSnapping = OptionalBoolDefault(key: "windowSnapping")
@@ -35,14 +32,12 @@ class Defaults {
     static let unsnapRestore = OptionalBoolDefault(key: "unsnapRestore")
     static let curtainChangeSize = OptionalBoolDefault(key: "curtainChangeSize")
     static let relaunchOpensMenu = BoolDefault(key: "relaunchOpensMenu")
-    
+    static let obtainWindowOnClick = OptionalBoolDefault(key: "obtainWindowOnClick")
 }
 
-// Function to store Boolean Defaults
 class BoolDefault {
-    
-    private var initialized = false
     private let key: String
+    private var initialized = false
     
     var enabled: Bool {
         didSet {
@@ -59,11 +54,10 @@ class BoolDefault {
     }
 }
 
-// Function to store Optional Boolean Defaults (May be null)
 class OptionalBoolDefault {
-    
-    private let key:String
+    private let key: String
     private var initialized = false
+    
     var enabled: Bool? {
         didSet {
             if initialized {
@@ -78,8 +72,10 @@ class OptionalBoolDefault {
         }
     }
     
+    var userDisabled: Bool { enabled == false }
+    var userEnabled: Bool { enabled == true }
+    
     init(key: String) {
-        
         self.key = key
         let intValue = UserDefaults.standard.integer(forKey: key)
         switch intValue {
@@ -92,7 +88,6 @@ class OptionalBoolDefault {
 }
 
 class StringDefault {
-    
     private let key: String
     private var initialized = false
     
@@ -112,7 +107,6 @@ class StringDefault {
 }
 
 class FloatDefault {
-    
     private let key: String
     private var initialized = false
     
@@ -135,7 +129,6 @@ class FloatDefault {
 }
 
 class IntDefault {
-    
     private let key: String
     private var initialized = false
     

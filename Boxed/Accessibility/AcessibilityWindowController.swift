@@ -22,8 +22,6 @@ class AccessibilityWindowController: NSWindowController {
     }
 }
 
-
-
 class AccessibilityViewController: NSViewController {
     
     @IBAction func openSystemPrefs(_ sender: Any) {

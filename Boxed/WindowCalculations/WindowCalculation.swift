@@ -9,6 +9,7 @@
 import Cocoa
 
 protocol Calculation {
+    
     func calculate(_ window: Window, lastAction: BoxedAction?, usableScreens: UsableScreens, action: WindowAction) -> WindowCalculationResult?
     
     func calculateRect(_ window: Window, lastAction: BoxedAction?, visibleFrameOfScreen: CGRect, action: WindowAction) -> RectResult
@@ -26,7 +27,7 @@ class WindowCalculation: Calculation {
         
         return WindowCalculationResult(rect: rectResult.rect, screen: usableScreens.currentScreen, resultingAction: action, resultingSubAction: rectResult.subAction)
     }
-    
+
     func calculateRect(_ window: Window, lastAction: BoxedAction?, visibleFrameOfScreen: CGRect, action: WindowAction) -> RectResult {
         return RectResult(CGRect.null)
     }
@@ -47,6 +48,11 @@ class WindowCalculation: Calculation {
     
 }
 
+struct Window {
+    let id: Int
+    let rect: CGRect
+}
+
 struct RectResult {
     let rect: CGRect
     let subAction: SubWindowAction?
@@ -55,11 +61,6 @@ struct RectResult {
         self.rect = rect
         self.subAction = subAction
     }
-}
-
-struct Window {
-    let id: Int
-    let rect: CGRect
 }
 
 struct WindowCalculationResult {
@@ -78,25 +79,56 @@ struct WindowCalculationResult {
 
 class WindowCalculationFactory {
     
+    let leftHalfCalculation = LeftRightHalfCalculation()
+    let rightHalfCalculation = LeftRightHalfCalculation()
     let bottomHalfCalculation = BottomHalfCalculation()
     let topHalfCalculation = TopHalfCalculation()
     let centerCalculation = CenterCalculation()
-    let nextPreviousDisplayCalculation = NextPreviousDisplayCalculation()
+    let nextPrevDisplayCalculation = NextPreviousDisplayCalculation()
     let maximizeCalculation = MaximizeCalculation()
     let changeSizeCalculation = ChangeSizeCalculation()
-    let almostMaximizeCalculation = AlmostMaximizeCalculation()
+    let lowerLeftCalculation = LowerLeftCalculation()
+    let lowerRightCalculation = LowerRightCalculation()
+    let upperLeftCalculation = UpperLeftCalculation()
+    let upperRightCalculation = UpperRightCalculation()
     let maxHeightCalculation = MaximizeHeightCalculation()
+    let firstThirdCalculation = FirstThirdCalculation()
+    let firstTwoThirdsCalculation = FirstTwoThirdsCalculation()
+    let centerThirdCalculation = CenterThirdCalculation()
+    let lastTwoThirdsCalculation = LastTwoThirdsCalculation()
+    let lastThirdCalculation = LastThirdCalculation()
+    let moveLeftRightCalculation = MoveLeftRightCalculation()
+    let moveUpCalculation = MoveUpCalculation()
+    let moveDownCalculation = MoveDownCalculation()
+    let almostMaximizeCalculation = AlmostMaximizeCalculation()
     
     func calculation(for action: WindowAction) -> WindowCalculation? {
+        
         switch action {
+        case .leftHalf: return leftHalfCalculation
+        case .rightHalf: return rightHalfCalculation
+        case .maximize: return maximizeCalculation
         case .maximizeHeight: return maxHeightCalculation
-        case .previousDisplay: return nextPreviousDisplayCalculation
-        case .nextDisplay: return nextPreviousDisplayCalculation
+        case .previousDisplay: return nextPrevDisplayCalculation
+        case .nextDisplay: return nextPrevDisplayCalculation
         case .larger: return changeSizeCalculation
         case .smaller: return changeSizeCalculation
         case .bottomHalf: return bottomHalfCalculation
         case .topHalf: return topHalfCalculation
         case .center: return centerCalculation
+        case .bottomLeft: return lowerLeftCalculation
+        case .bottomRight: return lowerRightCalculation
+        case .topLeft: return upperLeftCalculation
+        case .topRight: return upperRightCalculation
+        case .firstThird: return firstThirdCalculation
+        case .firstTwoThirds: return firstTwoThirdsCalculation
+        case .centerThird: return centerThirdCalculation
+        case .lastTwoThirds: return lastTwoThirdsCalculation
+        case .lastThird: return lastThirdCalculation
+        case .moveLeft: return moveLeftRightCalculation
+        case .moveRight: return moveLeftRightCalculation
+        case .moveUp: return moveUpCalculation
+        case .moveDown: return moveDownCalculation
         case .almostMaximize: return almostMaximizeCalculation
         default: return nil
         }

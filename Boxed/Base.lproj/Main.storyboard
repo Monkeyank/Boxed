@@ -2460,8 +2460,8 @@
         <scene sceneID="jys-zw-OL1">
             <objects>
                 <windowController storyboardIdentifier="AccessibilityWindowController" id="zRe-YE-HL9" customClass="AccessibilityWindowController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="rXF-d5-zOp">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Authorize Boxed" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="rXF-d5-zOp">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="163" y="199" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
@@ -2721,7 +2721,7 @@ DQ
                 </viewController>
                 <customObject id="KEZ-aD-iwf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="599"/>
+            <point key="canvasLocation" x="653" y="626"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="2Xj-7l-Q2y">

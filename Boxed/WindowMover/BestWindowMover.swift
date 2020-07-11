@@ -7,10 +7,10 @@
 //
 
 /**
-After a window has been moved and resized, if the window could not be resized small enough to fit the intended size, then some of the window may appear off the screen.
-
-BestWindowMover will move a window so that it fits entirely on the screen.
-*/
+ After a window has been moved and resized, if the window could not be resized small enough to fit the intended size, then some of the window may appear off the screen.
+ 
+ BestWindowMover will move a window so that it fits entirely on the screen.
+ */
 
 import Foundation
 
@@ -42,8 +42,8 @@ class BestWindowMover: WindowMover {
         }
         
         adjustedWindowRect = AccessibilityElement.normalizeCoordinatesOf(adjustedWindowRect, frameOfScreen: frameOfScreen)
-               if !currentWindowRect.equalTo(adjustedWindowRect) {
-                   frontmostWindowElement?.setRectOf(adjustedWindowRect)
-               }
+        if !currentWindowRect.equalTo(adjustedWindowRect) {
+            frontmostWindowElement?.setRectOf(adjustedWindowRect)
+        }
     }
 }

@@ -26,7 +26,7 @@ class WindowManager {
         ]
         
         fixedSizeWindowMoverChain = [
-            CenteringFixedSizeWindowMover(),
+            CenteringFixedSizedWindowMover(),
             BestWindowMover()
         ]
     }
@@ -129,6 +129,7 @@ class WindowManager {
         
         windowHistory.lastBoxedActions[windowId] = BoxedAction(
             action: calcResult.resultingAction,
+            subAction: calcResult.resultingSubAction,
             rect: resultingRect,
             count: newCount
         )
@@ -150,6 +151,7 @@ class WindowManager {
 
 struct BoxedAction {
     let action: WindowAction
+    let subAction: SubWindowAction?
     let rect: CGRect
     let count: Int
 }
