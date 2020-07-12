@@ -140,10 +140,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    @IBAction func checkForUpdates(_ sender: Any) {
-        SUUpdater.shared()?.checkForUpdates(sender)
-    }
-    
     @IBAction func authorizeAccessibility(_ sender: Any) {
         accessibilityAuthorization.showAuthorizationWindow()
     }

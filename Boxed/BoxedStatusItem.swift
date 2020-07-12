@@ -40,7 +40,7 @@ class BoxedStatusItem {
         added = true
         nsStatusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         nsStatusItem?.menu = self.statusMenu
-        nsStatusItem?.button?.image = NSImage(named: "StatusTemplate")
+        nsStatusItem?.button?.image = NSImage(named: "MenuBar")
     }
     
     private func remove() {
