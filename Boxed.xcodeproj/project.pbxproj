@@ -66,6 +66,8 @@
 		B2C2BEFB248B8B7700340919 /* AcessibilityWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2BEFA248B8B7700340919 /* AcessibilityWindowController.swift */; };
 		B2CFB1AB24988A0E001F058E /* TopHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */; };
 		B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */; };
+		B2D98CF124BAC0330027461D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D98CF024BAC0330027461D /* StoreKit.framework */; };
+		B2D98CF324BAD1960027461D /* IAPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D98CF224BAD1960027461D /* IAPViewController.swift */; };
 		B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0895A24AB259A00C114FA /* ServiceManagement.framework */; };
 		B2F38DC524BA52710045517E /* BoxedLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = B282C78E24882B31000D40F4 /* BoxedLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
@@ -152,6 +154,8 @@
 		B2C2BEFA248B8B7700340919 /* AcessibilityWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityWindowController.swift; sourceTree = "<group>"; };
 		B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHalfCalculation.swift; sourceTree = "<group>"; };
 		B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationToggle.swift; sourceTree = "<group>"; };
+		B2D98CF024BAC0330027461D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B2D98CF224BAD1960027461D /* IAPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPViewController.swift; sourceTree = "<group>"; };
 		B2E0895A24AB259A00C114FA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.debug.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D98CF124BAC0330027461D /* StoreKit.framework in Frameworks */,
 				BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */,
 				B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */,
 			);
@@ -271,6 +276,7 @@
 				B29562A62487374F006BE8FA /* Boxed.entitlements */,
 				B26454312489AC2000B68505 /* ShortcutManager.swift */,
 				B2C2BEF2248B856800340919 /* BoxedStatusItem.swift */,
+				B2D98CF224BAD1960027461D /* IAPViewController.swift */,
 				B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */,
 				B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */,
 				B26454332489AE2D00B68505 /* WindowManager.swift */,
@@ -361,6 +367,7 @@
 		D43AF8538B1A49EA6C24DEF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2D98CF024BAC0330027461D /* StoreKit.framework */,
 				B2E0895A24AB259A00C114FA /* ServiceManagement.framework */,
 				DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */,
 				7E401FA2B2FC3FC391B875BE /* Pods_BoxedLauncher.framework */,
@@ -554,6 +561,7 @@
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B295F50624AB0A3B00E6E644 /* UpperRightCalculation.swift in Sources */,
 				B268995B2499EE28006766C6 /* LeftRightHalfCalculation.swift in Sources */,
+				B2D98CF324BAD1960027461D /* IAPViewController.swift in Sources */,
 				B21BE09F2494B5930051C4FD /* NextPreviousDisplayCalculation.swift in Sources */,
 				B213981024AEFE8600D613A0 /* LastTwoThirdsCalculation.swift in Sources */,
 				B2C2BEF3248B856800340919 /* BoxedStatusItem.swift in Sources */,

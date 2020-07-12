@@ -131,7 +131,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func viewLogging(_ sender: Any) {
         Logger.showLogging(sender: sender)
     }
-    
+    @IBAction func showDonation(_ sender: Any) {
+        
+    }
     @IBAction func ignoreFrontMostApp(_ sender: NSMenuItem) {
         if sender.state == .on {
             applicationToggle.enableFrontApp()
