@@ -10,4 +10,5 @@ import AppKit
 import StoreKit
 
 class IAPViewController: NSViewController {
+    
 }
