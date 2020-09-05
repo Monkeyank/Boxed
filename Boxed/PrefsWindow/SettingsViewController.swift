@@ -70,7 +70,7 @@ class SettingsViewController: NSViewController {
         }
         
         if Defaults.hideMenuBarIcon.enabled {
-            hideMenuBarIconCheckbox.state = .on
+            hideMenuBarIconCheckbox.state = .off
         }
         
         if Defaults.subsequentExecutionMode.value == .acrossMonitor {

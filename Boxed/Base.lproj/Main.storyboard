@@ -681,7 +681,6 @@
                         <outlet property="mainStatusMenu" destination="BMw-dq-dof" id="2WF-J6-NWh"/>
                         <outlet property="quitMenuItem" destination="4hr-P8-lLP" id="s2O-Cj-bYZ"/>
                         <outlet property="unauthorizedMenu" destination="Ct1-YS-uHJ" id="cNy-ls-F56"/>
-                        <outlet property="viewLoggingMenuItem" destination="9mH-cx-xld" id="3BD-1y-D6K"/>
                     </connections>
                 </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -707,12 +706,6 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="showAbout:" target="Voe-Tx-rLC" id="Ebc-qc-uQz"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="View Logging" id="9mH-cx-xld" userLabel="View Logging">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="viewLogging:" target="Voe-Tx-rLC" id="iKn-OI-1ZB"/>
                             </connections>
                         </menuItem>
                         <menuItem title="Quit Boxed" keyEquivalent="q" id="4hr-P8-lLP" userLabel="Quit Boxed"/>

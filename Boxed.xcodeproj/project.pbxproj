@@ -21,11 +21,6 @@
 		B21BE09B2494B5060051C4FD /* MaximizeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09A2494B5060051C4FD /* MaximizeCalculation.swift */; };
 		B21BE09D2494B5610051C4FD /* MaximizeHeightCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09C2494B5610051C4FD /* MaximizeHeightCalculation.swift */; };
 		B21BE09F2494B5930051C4FD /* NextPreviousDisplayCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE09E2494B5930051C4FD /* NextPreviousDisplayCalculation.swift */; };
-		B228C92324C511AC00D196AD /* IAPProductIDs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B228C92224C511AC00D196AD /* IAPProductIDs.plist */; };
-		B228C92624C517C500D196AD /* IAPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228C92524C517C500D196AD /* IAPViewModel.swift */; };
-		B228C92824C519EC00D196AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228C92724C519EC00D196AD /* Model.swift */; };
-		B228C92A24C51A0300D196AD /* IAPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228C92924C51A0300D196AD /* IAPViewController.swift */; };
-		B228C92C24C51A3700D196AD /* SettingsManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228C92B24C51A3700D196AD /* SettingsManageable.swift */; };
 		B24D65452497496500C404C8 /* BottomHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D65442497496500C404C8 /* BottomHalfCalculation.swift */; };
 		B2530FBD248EE91F00452624 /* RepeatedExecutionsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */; };
 		B2530FBF248EEA2B00452624 /* WindowCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2530FBE248EEA2B00452624 /* WindowCalculation.swift */; };
@@ -72,7 +67,6 @@
 		B2CFB1AB24988A0E001F058E /* TopHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */; };
 		B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */; };
 		B2D98CF124BAC0330027461D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D98CF024BAC0330027461D /* StoreKit.framework */; };
-		B2D98CF324BAD1960027461D /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D98CF224BAD1960027461D /* IAPManager.swift */; };
 		B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0895A24AB259A00C114FA /* ServiceManagement.framework */; };
 		B2F38DC524BA52710045517E /* BoxedLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = B282C78E24882B31000D40F4 /* BoxedLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
@@ -108,11 +102,6 @@
 		B21BE09A2494B5060051C4FD /* MaximizeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeCalculation.swift; sourceTree = "<group>"; };
 		B21BE09C2494B5610051C4FD /* MaximizeHeightCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeHeightCalculation.swift; sourceTree = "<group>"; };
 		B21BE09E2494B5930051C4FD /* NextPreviousDisplayCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPreviousDisplayCalculation.swift; sourceTree = "<group>"; };
-		B228C92224C511AC00D196AD /* IAPProductIDs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IAPProductIDs.plist; sourceTree = "<group>"; };
-		B228C92524C517C500D196AD /* IAPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPViewModel.swift; sourceTree = "<group>"; };
-		B228C92724C519EC00D196AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		B228C92924C51A0300D196AD /* IAPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPViewController.swift; sourceTree = "<group>"; };
-		B228C92B24C51A3700D196AD /* SettingsManageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManageable.swift; sourceTree = "<group>"; };
 		B24D65442497496500C404C8 /* BottomHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomHalfCalculation.swift; sourceTree = "<group>"; };
 		B2530FBC248EE91F00452624 /* RepeatedExecutionsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedExecutionsCalculation.swift; sourceTree = "<group>"; };
 		B2530FBE248EEA2B00452624 /* WindowCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCalculation.swift; sourceTree = "<group>"; };
@@ -165,7 +154,6 @@
 		B2CFB1AA24988A0E001F058E /* TopHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHalfCalculation.swift; sourceTree = "<group>"; };
 		B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationToggle.swift; sourceTree = "<group>"; };
 		B2D98CF024BAC0330027461D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		B2D98CF224BAD1960027461D /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		B2E0895A24AB259A00C114FA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.debug.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,19 +191,6 @@
 				44FDAAD6CE6626B2AD329109 /* Pods-BoxedLauncher.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B228C92424C5176600D196AD /* IAP */ = {
-			isa = PBXGroup;
-			children = (
-				B228C92224C511AC00D196AD /* IAPProductIDs.plist */,
-				B2D98CF224BAD1960027461D /* IAPManager.swift */,
-				B228C92524C517C500D196AD /* IAPViewModel.swift */,
-				B228C92724C519EC00D196AD /* Model.swift */,
-				B228C92B24C51A3700D196AD /* SettingsManageable.swift */,
-				B228C92924C51A0300D196AD /* IAPViewController.swift */,
-			);
-			path = IAP;
 			sourceTree = "<group>";
 		};
 		B2614C55248DFF76004D5438 /* WindowMover */ = {
@@ -299,7 +274,6 @@
 				B29562A62487374F006BE8FA /* Boxed.entitlements */,
 				B26454312489AC2000B68505 /* ShortcutManager.swift */,
 				B2C2BEF2248B856800340919 /* BoxedStatusItem.swift */,
-				B228C92424C5176600D196AD /* IAP */,
 				B26CAC4B248C4EB900A8CCDC /* AccessibilityElement.swift */,
 				B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */,
 				B26454332489AE2D00B68505 /* WindowManager.swift */,
@@ -491,7 +465,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26454372489B0B500B68505 /* MessageView.xib in Resources */,
-				B228C92324C511AC00D196AD /* IAPProductIDs.plist in Resources */,
 				B29562A42487374F006BE8FA /* Main.storyboard in Resources */,
 				B2980ABF248860F2005C0E60 /* LogViewer.storyboard in Resources */,
 				B295629E2487374F006BE8FA /* Assets.xcassets in Resources */,
@@ -578,16 +551,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B295F50024AB09D800E6E644 /* LowerLeftCalculation.swift in Sources */,
-				B228C92C24C51A3700D196AD /* SettingsManageable.swift in Sources */,
 				B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */,
 				B202E64A2495DE3400C49A80 /* ChangeSizeCalculation.swift in Sources */,
 				B213981224AEFFB700D613A0 /* LastThirdCalculation.swift in Sources */,
 				B2980AC1248860FC005C0E60 /* LogViewer.swift in Sources */,
 				B26CAC50248C527200A8CCDC /* EventMonitor.swift in Sources */,
 				B295F50624AB0A3B00E6E644 /* UpperRightCalculation.swift in Sources */,
-				B228C92A24C51A0300D196AD /* IAPViewController.swift in Sources */,
 				B268995B2499EE28006766C6 /* LeftRightHalfCalculation.swift in Sources */,
-				B2D98CF324BAD1960027461D /* IAPManager.swift in Sources */,
 				B21BE09F2494B5930051C4FD /* NextPreviousDisplayCalculation.swift in Sources */,
 				B213981024AEFE8600D613A0 /* LastTwoThirdsCalculation.swift in Sources */,
 				B2C2BEF3248B856800340919 /* BoxedStatusItem.swift in Sources */,
@@ -600,13 +570,11 @@
 				B2614C57248E01D3004D5438 /* WindowMover.swift in Sources */,
 				B2614C5F248E06AD004D5438 /* CenteringFixedSizeWindowMover.swift in Sources */,
 				B2614C54248DEEB7004D5438 /* WindowHistory.swift in Sources */,
-				B228C92624C517C500D196AD /* IAPViewModel.swift in Sources */,
 				B295629A2487374C006BE8FA /* AppDelegate.swift in Sources */,
 				B21BE09D2494B5610051C4FD /* MaximizeHeightCalculation.swift in Sources */,
 				B24D65452497496500C404C8 /* BottomHalfCalculation.swift in Sources */,
 				B28C14452490B08300D5052D /* AlmostMaximizeCalculation.swift in Sources */,
 				B2614C5B248E059A004D5438 /* StandardWindowMover.swift in Sources */,
-				B228C92824C519EC00D196AD /* Model.swift in Sources */,
 				B2614C59248E0241004D5438 /* BestWindowMover.swift in Sources */,
 				B21BE09B2494B5060051C4FD /* MaximizeCalculation.swift in Sources */,
 				B213980A24AEFDE500D613A0 /* FirstThirdCalculation.swift in Sources */,

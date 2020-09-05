@@ -205,7 +205,6 @@ extension AppDelegate: NSMenuDelegate {
             }
         }
         
-        viewLoggingMenuItem.keyEquivalentModifierMask = .option
         quitMenuItem.keyEquivalent = "q"
         quitMenuItem.keyEquivalentModifierMask = .command
     }
