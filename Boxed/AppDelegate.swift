@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import Sparkle
 import ServiceManagement
 import os.log
 

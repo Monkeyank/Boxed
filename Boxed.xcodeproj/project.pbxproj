@@ -68,7 +68,6 @@
 		B2CFB1AD2498A620001F058E /* ApplicationToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */; };
 		B2D98CF124BAC0330027461D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D98CF024BAC0330027461D /* StoreKit.framework */; };
 		B2E0895B24AB259A00C114FA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0895A24AB259A00C114FA /* ServiceManagement.framework */; };
-		B2F38DC524BA52710045517E /* BoxedLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = B282C78E24882B31000D40F4 /* BoxedLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB10CD07E7E614E238496589 /* Pods_Boxed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				B2F38DC524BA52710045517E /* BoxedLauncher.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +153,7 @@
 		B2CFB1AC2498A620001F058E /* ApplicationToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationToggle.swift; sourceTree = "<group>"; };
 		B2D98CF024BAC0330027461D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B2E0895A24AB259A00C114FA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		B2F8869E25036CE300797AC1 /* BoxedRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoxedRelease.entitlements; sourceTree = "<group>"; };
 		C7FD4A4D626BDB8AAB49E192 /* Pods-BoxedLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxedLauncher.debug.xcconfig"; path = "Target Support Files/Pods-BoxedLauncher/Pods-BoxedLauncher.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8B11913E0DDFFAE1362246 /* Pods_Boxed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxed.release.xcconfig"; path = "Target Support Files/Pods-Boxed/Pods-Boxed.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +257,7 @@
 		B29562982487374C006BE8FA /* Boxed */ = {
 			isa = PBXGroup;
 			children = (
+				B2F8869E25036CE300797AC1 /* BoxedRelease.entitlements */,
 				B2614C55248DFF76004D5438 /* WindowMover */,
 				B26CAC4E248C525B00A8CCDC /* Snapping */,
 				B2C2BEF7248B8B4200340919 /* Accessibility */,
@@ -814,7 +814,7 @@
 			baseConfigurationReference = EA4D43EF5DF7A44FC30C4093 /* Pods-Boxed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Boxed/Boxed.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Boxed/BoxedRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

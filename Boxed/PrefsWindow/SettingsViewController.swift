@@ -8,7 +8,6 @@
 
 import Cocoa
 import ServiceManagement
-import Sparkle
 
 class SettingsViewController: NSViewController {
     

@@ -9,7 +9,6 @@ target 'Boxed' do
 
   # Pods for Boxed
   pod 'MASShortcut'
-  pod 'Sparkle'
 
 end
 
