@@ -681,7 +681,6 @@
                         <outlet property="mainStatusMenu" destination="BMw-dq-dof" id="2WF-J6-NWh"/>
                         <outlet property="quitMenuItem" destination="4hr-P8-lLP" id="s2O-Cj-bYZ"/>
                         <outlet property="unauthorizedMenu" destination="Ct1-YS-uHJ" id="cNy-ls-F56"/>
-                        <outlet property="viewLoggingMenuItem" destination="9mH-cx-xld" id="3BD-1y-D6K"/>
                     </connections>
                 </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -700,19 +699,10 @@
                                 <action selector="openPreferences:" target="Voe-Tx-rLC" id="tah-5e-SZr"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Support Us!" id="cc9-Vr-Kio" userLabel="Support Us!">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
                         <menuItem title="About" id="vKo-8q-1Ud" userLabel="About">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="showAbout:" target="Voe-Tx-rLC" id="Ebc-qc-uQz"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="View Logging" id="9mH-cx-xld" userLabel="View Logging">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="viewLogging:" target="Voe-Tx-rLC" id="iKn-OI-1ZB"/>
                             </connections>
                         </menuItem>
                         <menuItem title="Quit Boxed" keyEquivalent="q" id="4hr-P8-lLP" userLabel="Quit Boxed"/>
@@ -2238,7 +2228,7 @@
                                         <rect key="frame" x="0.0" y="158" width="450" height="16"/>
                                         <subviews>
                                             <button verticalHuggingPriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="wT1-CA-qTh">
-                                                <rect key="frame" x="-2" y="-1" width="398" height="18"/>
+                                                <rect key="frame" x="-2" y="0.0" width="396" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="14" id="8L0-l3-e0b"/>
                                                 </constraints>
@@ -2275,7 +2265,7 @@
                                         </customSpacing>
                                     </stackView>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hog-en-bgA">
-                                        <rect key="frame" x="-2" y="132" width="454" height="18"/>
+                                        <rect key="frame" x="-2" y="133" width="452" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="Tkk-aM-Oq2"/>
                                         </constraints>
@@ -2288,7 +2278,7 @@
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5iI-sE-EUA">
-                                        <rect key="frame" x="-2" y="108" width="454" height="18"/>
+                                        <rect key="frame" x="-2" y="109" width="452" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="WcM-7a-1Wb"/>
                                         </constraints>
@@ -2312,7 +2302,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-7L-LFh">
-                                        <rect key="frame" x="-2" y="60" width="454" height="18"/>
+                                        <rect key="frame" x="-2" y="61" width="452" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="eQP-Q1-Cah"/>
                                         </constraints>
@@ -2336,7 +2326,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V1k-us-elJ">
-                                        <rect key="frame" x="-2" y="-2" width="454" height="18"/>
+                                        <rect key="frame" x="-2" y="-1" width="452" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="bde-yc-ABJ"/>
                                         </constraints>
@@ -2375,7 +2365,7 @@
                                 </customSpacing>
                             </stackView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nQ2-iv-93L">
-                                <rect key="frame" x="14" y="13" width="197" height="32"/>
+                                <rect key="frame" x="13" y="13" width="203" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Jxa-aB-XPY"/>
                                 </constraints>
@@ -2458,14 +2448,14 @@
             <objects>
                 <viewController storyboardIdentifier="WelcomeViewController" id="LF3-hb-Qff" customClass="WelcomeViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Tc3-kT-8YJ">
-                        <rect key="frame" x="0.0" y="0.0" width="290" height="306"/>
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="304"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="22" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBB-4N-5Ib">
-                                <rect key="frame" x="20" y="20" width="250" height="266"/>
+                                <rect key="frame" x="20" y="20" width="250" height="264"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uud-LR-7yJ" userLabel="Welcome to Boxed!">
-                                        <rect key="frame" x="31" y="240" width="188" height="26"/>
+                                        <rect key="frame" x="31" y="238" width="188" height="26"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Welcome to Boxed!" id="68d-jZ-EC6">
                                             <font key="font" metaFont="system" size="22"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2473,7 +2463,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qqi-Kp-oML">
-                                        <rect key="frame" x="-2" y="186" width="254" height="32"/>
+                                        <rect key="frame" x="-2" y="184" width="254" height="32"/>
                                         <textFieldCell key="cell" alignment="center" title="Please select your default shortcuts and behavior" id="eJJ-sC-KSE">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -2481,10 +2471,10 @@
                                         </textFieldCell>
                                     </textField>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="22" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvm-Ff-72H">
-                                        <rect key="frame" x="55" y="100" width="141" height="64"/>
+                                        <rect key="frame" x="54" y="100" width="143" height="62"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-OD-Nnf">
-                                                <rect key="frame" x="-6" y="36" width="153" height="32"/>
+                                                <rect key="frame" x="-7" y="35" width="157" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Recommended" bezelStyle="rounded" image="Untilted" imagePosition="left" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T8Y-Ff-aoJ">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -2497,7 +2487,7 @@ DQ
                                                 </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zyM-xy-7AV">
-                                                <rect key="frame" x="-6" y="-7" width="153" height="32"/>
+                                                <rect key="frame" x="-7" y="-7" width="157" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Spectacle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c6c-Xu-mpy">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -2574,14 +2564,14 @@ DQ
             <objects>
                 <viewController id="bvU-Cn-kIO" userLabel="Accessibility View Controller" customClass="AccessibilityViewController" customModule="Boxed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ujN-70-v8x">
-                        <rect key="frame" x="0.0" y="0.0" width="290" height="389"/>
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="385"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="22" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHf-2l-74u">
-                                <rect key="frame" x="20" y="20" width="250" height="349"/>
+                                <rect key="frame" x="20" y="20" width="250" height="345"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PMF-o3-xu3" userLabel="Authorize Boxed">
-                                        <rect key="frame" x="45" y="323" width="160" height="26"/>
+                                        <rect key="frame" x="45" y="319" width="160" height="26"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Authorize Boxed" id="2Uf-mg-BhR" userLabel="Authorize Boxed">
                                             <font key="font" metaFont="system" size="22"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2589,7 +2579,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RvB-0B-5pd">
-                                        <rect key="frame" x="95" y="241" width="60" height="60"/>
+                                        <rect key="frame" x="95" y="237" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="1aH-Zh-CCZ"/>
                                             <constraint firstAttribute="width" constant="60" id="vUP-oR-IJC"/>
@@ -2597,7 +2587,7 @@ DQ
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Untilted" id="s6l-kJ-j5x"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-hK-cvR">
-                                        <rect key="frame" x="-2" y="187" width="254" height="32"/>
+                                        <rect key="frame" x="-2" y="183" width="254" height="32"/>
                                         <textFieldCell key="cell" alignment="center" title="Boxed needs your permission to control your window positions." id="RPW-8c-bd9">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -2605,7 +2595,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wHy-la-Yb5">
-                                        <rect key="frame" x="-2" y="137" width="254" height="28"/>
+                                        <rect key="frame" x="-2" y="133" width="254" height="28"/>
                                         <textFieldCell key="cell" alignment="center" title="Go to System Preferences → Security &amp; Privacy → Privacy → Accessibility" id="3We-DQ-daT">
                                             <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -2613,7 +2603,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oZW-At-YSJ">
-                                        <rect key="frame" x="34" y="89" width="182" height="28"/>
+                                        <rect key="frame" x="34" y="88" width="182" height="26"/>
                                         <buttonCell key="cell" type="bevel" title="Open System Preferences" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2UU-s0-Q7z">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -2626,7 +2616,7 @@ DQ
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmI-64-rhO">
-                                        <rect key="frame" x="70" y="54" width="111" height="16"/>
+                                        <rect key="frame" x="70" y="54" width="110" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Check Boxed.app" id="tGv-H6-5hi">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>

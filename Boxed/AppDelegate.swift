@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import Sparkle
 import ServiceManagement
 import os.log
 
@@ -205,7 +204,6 @@ extension AppDelegate: NSMenuDelegate {
             }
         }
         
-        viewLoggingMenuItem.keyEquivalentModifierMask = .option
         quitMenuItem.keyEquivalent = "q"
         quitMenuItem.keyEquivalentModifierMask = .command
     }

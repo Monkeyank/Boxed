@@ -10,8 +10,9 @@ import Cocoa
 
 class BoxedStatusItem {
     static let instance = BoxedStatusItem()
-    private var added: Bool = false
+    
     private var nsStatusItem: NSStatusItem?
+    private var added: Bool = false
     public var statusMenu: NSMenu? {
         didSet {
             nsStatusItem?.menu = statusMenu
@@ -21,11 +22,7 @@ class BoxedStatusItem {
     private init() {}
     
     public func refreshVisibility() {
-        if Defaults.hideMenuBarIcon.enabled {
-            remove()
-        } else {
             add()
-        }
     }
     
     public func openMenu() {
